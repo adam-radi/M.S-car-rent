@@ -1,0 +1,252 @@
+.booking-guide-wrapper {
+  padding: 15px 0;
+  color: #fff;
+  max-height: 90vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 56, 92, 0.3) transparent;
+}
+
+.booking-guide-wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+
+.booking-guide-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(255, 56, 92, 0.3);
+  border-radius: 10px;
+}
+
+.guide-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .guide-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.guide-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.guide-intro {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+  max-width: 500px;
+}
+
+.guide-steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+  .guide-steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+.guide-step {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.step-num {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: var(--accent-red, #ff385c);
+  background: rgba(255, 56, 92, 0.1);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 56, 92, 0.3);
+}
+
+.step-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 3px;
+  color: #fff;
+}
+
+.step-info p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.legend-red {
+  color: #ff385c;
+  font-weight: 600;
+}
+
+.calendar-legend {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 15px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.calendar-legend h4 {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+}
+
+.dot-unavailable {
+  background: #444;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dot-available {
+  background: #fff;
+}
+
+.dot-selected {
+  background: var(--accent-red, #ff385c);
+  box-shadow: 0 0 10px rgba(255, 56, 92, 0.5);
+}
+
+.legend-note {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 10px;
+}
+
+/* Visual Column */
+.guide-visual {
+  position: relative;
+}
+
+.mockup-container {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: perspective(1000px) rotateY(-5deg);
+  transition: transform 0.5s ease;
+}
+
+.mockup-container:hover {
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.mockup-image {
+  width: 100%;
+  max-height: 450px;
+  object-fit: contain;
+  display: block;
+}
+
+.mockup-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255, 56, 92, 0.1) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.guide-summary {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255, 56, 92, 0.05);
+  border-left: 4px solid #ff385c;
+  border-radius: 0 12px 12px 0;
+}
+
+.guide-summary h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #ff385c;
+  text-transform: uppercase;
+}
+
+.guide-summary ul {
+  list-style: none;
+  padding: 0;
+}
+
+.guide-summary li {
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.guide-summary li::before {
+  content: '✓';
+  color: #ff385c;
+  font-weight: bold;
+}
+
+.guide-summary li strong {
+  color: #fff;
+  min-width: 120px;
+}
+
+.summary-cta {
+  margin-top: 15px;
+}
+
+.guide-cta-link {
+  display: inline-block;
+  background: #ff385c;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 56, 92, 0.3);
+}
+
+.guide-cta-link:hover {
+  background: #ff1e4d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 56, 92, 0.4);
+}

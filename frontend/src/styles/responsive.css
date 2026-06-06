@@ -1,0 +1,1802 @@
+/* Responsive overrides for mobile and tablet only.
+   These rules are loaded last so the desktop styles stay untouched. */
+
+.search-pill-shell {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.search-pill-toggle {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(20, 20, 24, 0.75);
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 0.95rem 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.search-pill-toggle-icon {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.search-pill-panel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: clamp(2.4rem, 5vw, 3.4rem);
+  }
+
+  .hero {
+    margin: 0 14px 14px;
+  }
+
+  .hero-content {
+    padding: 0 1.25rem;
+    padding-left: 0px;
+
+  }
+
+  .hero-bottom-content {
+    gap: 0.75rem;
+    padding-bottom: 2rem;
+  }
+
+  .search-pill-shell {
+    gap: 0.65rem;
+    width: 90%;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .search-pill {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    border-radius: 50px;
+    padding: 0.85rem 1rem;
+  }
+
+  .search-pill-panel {
+    gap: 0.65rem;
+  }
+
+  /* Tablet-specific: prevent search inputs and button from shrinking too small */
+  .search-pill-toggle {
+    display: flex;
+    border-radius: 20px;
+    padding: 0.85rem 1rem;
+  }
+
+  .search-pill-panel {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .search-pill-shell:not(.is-open) .search-pill {
+    display: none;
+  }
+
+  .search-pill-shell.is-open .search-pill {
+    display: flex;
+  }
+
+  .search-pill-shell.is-open .search-pill-panel {
+    display: flex;
+  }
+
+  .search-field,
+  .search-field-date {
+    flex: 1 1 min(260px, 100%);
+    min-width: 0;
+  }
+
+  .btn-search {
+    flex: 0 0 auto;
+    min-width: 140px;
+  }
+
+  .search-divider {
+    display: none;
+  }
+
+  .search-field,
+  .search-field-date {
+    flex: 1 1 45%;
+    min-width: 45%;
+    padding-inline: 0.6rem;
+  }
+
+  .field-label {
+    font-size: 0.52rem;
+  }
+
+  .custom-select-trigger {
+    font-size: 0.76rem;
+  }
+
+  .field-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 0.3rem;
+  }
+
+  .field-icon svg {
+    width: 9px;
+    height: 9px;
+  }
+
+  .date-input-pill {
+    font-size: 0.75rem;
+  }
+
+  .btn-search {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0.5rem;
+    padding: 0.85rem 1rem;
+    border-radius: 14px;
+  }
+
+  .section-title {
+    font-size: 2.4rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.98rem;
+    max-width: 720px;
+  }
+
+  .bento-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto;
+  }
+
+  .bento-grid .bento-card.featured {
+    grid-row: span 1;
+  }
+
+  .steps-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cars-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .our-cars-header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .cars-carousel-section .container {
+    padding: 0 15px;
+  }
+
+  .swiper-button-prev-custom,
+  .swiper-button-next-custom {
+    width: 40px;
+    height: 40px;
+  }
+
+  .swiper-button-prev-custom svg,
+  .swiper-button-next-custom svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .cars-page-header-premium {
+    margin-bottom: 1rem;
+  }
+
+  .cars-page-header-premium .our-cars-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .cars-page-body-premium {
+    padding: 0 1.25rem;
+  }
+
+  .car-detail-content,
+  .booking-content,
+  .profile-content,
+  .review-layout,
+  .contact-main-card,
+  .abp-process-map-grid,
+  .messages-layout,
+  .dashboard-main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .specs-grid,
+  .booking-details,
+  .info-grid,
+  .client-filter-grid,
+  .crm-detail-grid,
+  .input-group-grid,
+  .status-options-grid,
+  .revenue-summary,
+  .customer-tiles,
+  .client-overview-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .booking-card {
+    flex-direction: column;
+  }
+
+  .booking-card-image {
+    width: 100%;
+    height: 220px;
+  }
+
+  .booking-card-actions {
+    flex-direction: row;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 1.5rem 2rem;
+    min-width: auto;
+  }
+
+  .manage-header,
+  .manage-cars-header,
+  .dashboard-header,
+  .client-bookings-topbar,
+  .client-lookup-form,
+  .detail-header,
+  .mybookings-header,
+  .profile-header,
+  .footer-bottom,
+  .newsletter-band-inner,
+  .contact-form-heading-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .header-right,
+  .admin-controls-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .search-box,
+  .search-bar-admin {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .filter-group-admin {
+    flex-wrap: wrap;
+  }
+
+  .table-container,
+  .products-table-shell,
+  .client-list-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .admin-table,
+  .products-table {
+    min-width: 760px;
+  }
+
+  .admin-sidebar {
+    width: min(84vw, 310px);
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translateX(-102%);
+    flex-direction: column;
+    border-right: 1px solid var(--border-color);
+    border-bottom: none;
+    overflow-y: auto;
+  }
+
+  .admin-sidebar.mobile-open {
+    transform: translateX(0);
+  }
+
+  .sidebar-header {
+    padding: 72px 18px 18px;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .sidebar-nav {
+    flex-direction: column;
+    padding: 18px 0;
+    overflow: visible;
+  }
+
+  .sidebar-link {
+    justify-content: flex-start;
+    padding: 12px 24px;
+    border-left: 3px solid transparent;
+    border-bottom: none;
+    white-space: normal;
+  }
+
+  .sidebar-link .icon {
+    margin-right: 14px;
+  }
+
+  .sidebar-header h2,
+  .sidebar-link span,
+  .sidebar-footer p {
+    display: inline;
+  }
+
+  .sidebar-footer {
+    display: block;
+  }
+
+  .admin-main-content {
+    padding: 24px 3% 40px;
+  }
+
+  .interactive-services-section {
+    width: 100%;
+    border-radius: 16px;
+  }
+
+  .service-tab {
+    padding: 0.85rem 1rem;
+    gap: 0.75rem;
+  }
+
+  .service-tab-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .service-tab-title {
+    font-size: 0.85rem;
+  }
+
+  .service-tab-subtitle {
+    font-size: 0.68rem;
+  }
+
+  .services-main-heading {
+    font-size: 2rem;
+  }
+
+  .footer-main-body {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* ── Side breathing room for all non-home pages on tablet ── */
+  .cars-page-container-premium,
+  .cars-page-header-premium,
+  .cars-page-body-premium {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .car-detail-container,
+  .booking-container,
+  .mybookings-container,
+  .profile-page,
+  .reviews-page-shell,
+  .abp-hero,
+  .contact-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+
+
+
+  .navbar-menu {
+    width: 94%;
+  }
+
+  .nav-link,
+  .admin-link,
+  .btn-register,
+  .btn-login {}
+
+  .hero {
+    padding-top: 10vh;
+  }
+
+  .hero-title {
+    font-size: clamp(2.1rem, 8vw, 2.9rem);
+    line-height: 1.1;
+  }
+
+  .search-pill-toggle {
+    display: flex;
+    border-radius: 18px;
+    padding: 0.95rem 1rem;
+  }
+
+  .search-pill-shell:not(.is-open) .search-pill {
+    display: none;
+  }
+
+  .search-pill {
+    padding: 0.8rem;
+    border-radius: 18px;
+  }
+
+  .search-pill-panel {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .search-pill-shell.is-open .search-pill-panel {
+    display: flex;
+  }
+
+  .search-pill-shell.is-open .search-pill {
+    display: flex;
+  }
+
+  .search-pill-shell {
+    gap: 0.5rem;
+  }
+
+  .hero-bottom-content {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .hero-location-card {
+    flex: 0 1 auto;
+    max-width: 220px;
+  }
+
+  .hero-caption {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .search-pill {
+    gap: 0.65rem;
+  }
+
+  .search-field,
+  .search-field-date {
+    flex: 1 1 100%;
+    min-width: 100%;
+    width: 100%;
+    padding-inline: 0.45rem;
+  }
+
+  .search-pill .search-field {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+  }
+
+  .custom-dropdown-box {
+    width: min(100%, 260px);
+  }
+
+  .search-field-date .custom-select-trigger {
+    min-height: 44px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.92rem;
+  }
+
+  .bento-grid,
+  .steps-grid,
+  .cars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bento-grid {
+    gap: 0.9rem;
+  }
+
+  .steps-grid {
+    gap: 0.9rem;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    margin: 0 10px 10px;
+  }
+
+  .hero-content {
+    padding: 0 0.9rem;
+    padding-left: unset;
+
+  }
+
+  .car-detail-container,
+  .booking-container,
+  .mybookings-container,
+  .profile-page,
+  .contact-section,
+  .abp-hero,
+  .reviews-page-shell,
+  .manage-bookings,
+  .manage-cars-container,
+  .manage-messages,
+  .manage-clients,
+  .admin-main-content {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .car-detail-content {
+    padding: 1.5rem;
+  }
+
+  .cars-page-container-premium {
+    padding-bottom: 2.5rem;
+  }
+
+  .cars-page-header-premium,
+  .cars-page-body-premium {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .main-image {
+    min-height: 320px;
+  }
+
+  .specs-grid,
+  .booking-details,
+  .info-grid,
+  .client-filter-grid,
+  .crm-detail-grid,
+  .input-group-grid,
+  .status-options-grid,
+  .revenue-summary,
+  .customer-tiles,
+  .client-overview-grid,
+  .footer-main-body,
+  .footer-stats-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-form .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .booking-form .form-row .form-group {
+    width: 100%;
+  }
+
+  .booking-card-info {
+    padding: 1.5rem;
+  }
+
+  .booking-card-actions {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .booking-card-top {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .booking-details {
+    grid-template-columns: 1fr;
+  }
+
+  .mybookings-header h1,
+  .profile-header h1,
+  .cars-page-header-premium .our-cars-title,
+  .abp-hero-title,
+  .contact-form-heading,
+  .mybookings-empty h2 {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 1.25rem;
+    border-radius: 20px;
+  }
+
+  .modal-box,
+  .crm-modal-box {
+    width: 100%;
+    max-width: none;
+    border-radius: 20px;
+  }
+
+  .modal-footer-glass {
+    flex-direction: column;
+  }
+
+  .btn-cancel-flat,
+  .btn-save-glow,
+  .btn-browse,
+  .btn-explore,
+  .btn-retry,
+  .add-vehicle-btn,
+  .btn-new-booking-glass,
+  .dashboard-button,
+  .dashboard-chip,
+  .btn-primary-admin,
+  .btn-confirm-booking,
+  .btn-search,
+  .btn-reply,
+  .btn-whatsapp {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-main-body {
+    gap: 1.5rem;
+  }
+
+  .footer-stats-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .footer-stat-divider {
+    display: none;
+  }
+
+  .contact-main-card {
+    padding: 10px;
+    border-radius: 24px;
+  }
+
+  .contact-left-form {
+    padding: 20px 18px;
+  }
+
+  .image-wrapper {
+    min-height: 280px;
+  }
+
+  .image-overlay-card {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    width: auto;
+  }
+
+  .abp-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .abp-process-map-grid {
+    gap: 24px;
+  }
+
+  .abp-map-visual {
+    height: 260px;
+  }
+
+  .abp-map-node {
+    width: 96px;
+    height: 96px;
+  }
+
+  .reviews-page-card {
+    max-width: 100%;
+  }
+
+  .messages-layout {
+    height: auto;
+    overflow: visible;
+  }
+
+  .detail-footer {
+    flex-direction: column;
+  }
+
+  .detail-footer .btn-reply,
+  .detail-footer .btn-whatsapp,
+  .detail-footer .btn-delete-msg {
+    width: 100%;
+  }
+
+  .table-container,
+  .products-table-shell,
+  .client-list-table-wrap {
+    border-radius: 18px;
+  }
+
+  .table-empty,
+  .no-data {
+    padding: 3rem 1rem;
+  }
+
+  .fleet-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .search-box,
+  .search-bar-admin {
+    max-width: none;
+  }
+
+  .calendar-modal-content {
+    width: min(100%, 420px);
+    padding: 1rem;
+  }
+
+  .availability-banner {
+    border-radius: 24px;
+    flex-wrap: wrap;
+  }
+
+  .availability-banner-clear {
+    margin-left: 0;
+  }
+
+  .ourcars-button-prev,
+  .ourcars-button-next {
+    display: flex;
+    width: 40px;
+    height: 40px;
+  }
+
+  .btn-more-cars-header {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .summary-info {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    width: 96%;
+    top: 10px;
+    height: 55px;
+  }
+
+  .logo-wrapper,
+  .logo-wrapper-sidebar {
+    width: 34px;
+    height: 34px;
+  }
+
+  .brand-name {
+    font-size: 1.05rem;
+  }
+
+  .navbar-menu {
+    width: 96%;
+    top: 78px;
+    max-height: calc(100vh - 92px);
+  }
+
+  .nav-link,
+  .admin-link {
+    width: 92%;
+    padding: 0.9rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero {
+    padding-top: 9vh;
+  }
+
+  .search-pill {
+    padding: 0.75rem;
+    border-radius: 16px;
+  }
+
+  .search-pill-toggle {
+    padding: 0.8rem 0.95rem;
+    border-radius: 16px;
+    font-size: 0.9rem;
+  }
+
+  .btn-search {
+    padding: 0.95rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.88rem;
+  }
+
+  .cars-page-header-premium .our-cars-subtitle,
+  .abp-hero-subtitle,
+  .mybookings-empty p,
+  .contact-form-desc {
+    font-size: 0.95rem;
+  }
+
+  .car-detail-container,
+  .booking-container,
+  .mybookings-container,
+  .profile-page {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .cars-page-header-premium {
+    padding: 0 1rem;
+  }
+
+  .cars-page-body-premium {
+    padding: 0 1rem;
+  }
+
+  .main-image {
+    min-height: 260px;
+  }
+
+  .car-luxury-card {
+    height: 360px;
+  }
+
+  .summary-image {
+    height: 240px;
+  }
+
+  .booking-form-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .booking-alert {
+    padding: 1rem 1.1rem;
+  }
+
+  .booking-card-actions {
+    gap: 0.75rem;
+  }
+
+  .booking-card-info {
+    padding: 1.1rem;
+  }
+
+  .booking-card-top h3,
+  .mybookings-header h1,
+  .profile-header h1,
+  .cars-page-header-premium .our-cars-title,
+  .abp-hero-title,
+  .contact-form-heading {
+    font-size: 1.7rem;
+  }
+
+  .mybookings-header,
+  .profile-header,
+  .manage-header,
+  .manage-cars-header,
+  .dashboard-header,
+  .detail-header {
+    margin-bottom: 2rem;
+  }
+
+  .booking-card::before {
+    height: 3px;
+  }
+
+  .btn-browse,
+  .btn-explore,
+  .btn-retry,
+  .btn-new-booking-glass,
+  .add-vehicle-btn,
+  .dashboard-button,
+  .dashboard-chip,
+  .btn-primary-admin {
+    padding: 0.9rem 1rem;
+  }
+
+
+
+  .card,
+  .modal-box,
+  .crm-modal-box {
+    border-radius: 18px;
+  }
+
+  .modal-head,
+  .password-modal-form,
+  .crm-modal-body,
+  .auth-form-panel,
+  .contact-left-form {
+    padding: 1rem;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+  }
+
+  .footer-bottom-right {
+    flex-wrap: wrap;
+  }
+
+  .availability-banner {
+    padding: 0.8rem 1rem;
+  }
+
+  .btn-unavailable-luxury {
+    width: 100%;
+  }
+
+  .table-container,
+  .products-table-shell,
+  .client-list-table-wrap {
+    border-radius: 16px;
+  }
+
+  .admin-table,
+  .products-table {
+    min-width: 680px;
+  }
+
+  .detail-footer .btn-reply,
+  .detail-footer .btn-whatsapp,
+  .detail-footer .btn-delete-msg {
+    font-size: 0.92rem;
+  }
+}
+
+/* Extra global responsive layer
+   Keeps the desktop styling intact while tightening layout on tablets and phones. */
+.main-content--spaced {
+  padding-top: 100px;
+
+}
+
+.main-content--flush {
+  padding-top: 0;
+}
+
+@media (max-width: 1200px) {
+  .main-content--spaced {
+    padding-top: 92px;
+  }
+
+  .auth-split-wrapper {
+    flex-direction: column;
+    min-height: auto;
+    margin-bottom: 0;
+  }
+
+  .auth-info-side,
+  .auth-form-side {
+    width: 100%;
+    flex: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .auth-info-side {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 7rem;
+    padding-bottom: 1rem;
+  }
+
+  .auth-info-content {
+    max-width: 720px;
+  }
+
+  .auth-info-body {
+    margin-top: 1.5rem;
+  }
+
+  .auth-form-side {
+    justify-content: center;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .auth-form-wrapper {
+    max-width: 560px;
+  }
+
+  .auth-form-panel {
+    margin-top: 0;
+  }
+
+  .auth-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .auth-info-side {
+    padding-top: 6rem;
+  }
+
+  .auth-info-content h1 {
+    font-size: 2rem;
+    line-height: 1.05;
+  }
+
+  .auth-info-content p {
+    font-size: 1rem;
+  }
+
+  .newsletter-band-inner,
+  .newsletter-content-col,
+  .newsletter-left,
+  .footer-bottom,
+  .contact-form-heading-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .newsletter-divider-v {
+    display: none;
+  }
+
+  .newsletter-form {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .newsletter-input,
+  .newsletter-btn {
+    width: 100%;
+  }
+
+  .messages-layout {
+    grid-template-columns: 1fr;
+    overflow: visible;
+  }
+
+  .message-detail {
+    min-height: 420px;
+  }
+
+  .detail-header,
+  .detail-footer {
+    flex-direction: column;
+  }
+
+  .detail-footer .btn-reply,
+  .detail-footer .btn-whatsapp,
+  .detail-footer .btn-delete-msg {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content--spaced {
+    padding-top: 76px;
+  }
+
+  .auth-info-side {
+    display: none;
+  }
+
+  .auth-form-side {
+    padding: 1rem 1rem 2.5rem;
+  }
+
+  .auth-form-wrapper {
+    max-width: 100%;
+  }
+
+  .auth-logo {
+    height: auto;
+    padding-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .auth-logo img {
+    height: 140px;
+  }
+
+  .auth-form-panel {
+    padding: 1.5rem;
+  }
+
+  .auth-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .main-image {
+    min-height: 320px;
+  }
+
+  .thumbnails {
+    gap: 0.75rem;
+  }
+
+  .thumbnail {
+    width: 66px;
+    height: 66px;
+  }
+
+  .booking-details,
+  .specs-grid,
+  .revenue-summary,
+  .customer-tiles,
+  .client-overview-grid,
+  .client-filter-grid,
+  .crm-detail-grid,
+  .input-group-grid,
+  .status-options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-main-body {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 780px) {
+  .main-content--spaced {
+    padding-top: 68px;
+  }
+
+  /* On small phones: center the auth form with ~20% side spacing */
+  .auth-form-side {
+    padding: 0.75rem 0 2rem;
+    /* remove horizontal padding, center via wrapper */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .auth-form-panel {
+    padding: 1.1rem;
+    border-radius: 18px;
+  }
+
+  /* Make the form container narrower (60% width) so there is ~20% space on each side */
+  .auth-form-wrapper {
+    width: 70%;
+    /* 100% - 20% - 20% = 60% content */
+    max-width: 480px;
+    min-width: 240px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  /* Slightly reduce panel padding to fit smaller containers */
+  .auth-form-panel {
+    width: 100%;
+    padding: 1rem 1rem;
+    box-sizing: border-box;
+  }
+
+  .auth-input-wrap input {
+    font-size: 0.82rem;
+  }
+
+  .auth-submit-btn {
+    padding: 0.75rem;
+  }
+
+  .main-image {
+    min-height: 250px;
+  }
+
+  .thumbnail {
+    width: 58px;
+    height: 58px;
+    border-radius: 12px;
+  }
+
+  .footer-logo-text {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .features-header .section-title {
+    font-size: 2.6rem;
+  }
+
+  .main-huge-title {
+    font-size: 2.3rem;
+  }
+
+  .main-cta-btn {
+    padding: 0.7rem 1.6rem;
+    font-size: 0.88rem;
+  }
+
+  .brand-carousel-pin-wrap {
+    height: 108px;
+  }
+
+  .brand-svg-logo {
+    height: 48px;
+    min-width: 48px;
+  }
+
+  .carousel-track {
+    gap: 4.5rem;
+    padding: 0 2.5rem;
+  }
+
+  .our-cars-title {
+    font-size: 2.5rem;
+  }
+
+  .car-luxury-card {
+    height: 390px;
+  }
+
+  .btn-book-luxury {
+    padding: 0.45rem 0.45rem 0.45rem 0.95rem;
+    font-size: 0.84rem;
+  }
+
+  .btn-book-luxury .btn-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .testimonials-title {
+    font-size: 2.2rem;
+  }
+
+  .btn-view-all-reviews {
+    padding: 0.7rem 1.8rem;
+    font-size: 1rem;
+    margin-right: 0;
+  }
+
+  .cars-page-header-premium {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    box-sizing: border-box !important;
+  }
+
+  .cars-page-search-pill {
+    width: 100% !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .cars-page-search-pill .search-pill {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* ── Search pill: center & shrink ── */
+  .search-pill-container {
+    display: flex !important;
+    justify-content: center !important;
+    padding: 0 1rem !important;
+    box-sizing: border-box !important;
+  }
+
+  .search-pill-shell {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .search-pill {
+    max-width: 100% !important;
+    padding: 0.75rem 0.85rem !important;
+  }
+
+  .search-pill-panel {
+    gap: 0.35rem !important;
+  }
+
+  .search-field,
+  .search-field-date {
+    flex: 1 1 28% !important;
+    min-width: 110px !important;
+    padding-inline: 0.4rem !important;
+  }
+
+  .field-label {
+    font-size: 0.48rem !important;
+  }
+
+  .custom-select-trigger {
+    font-size: 0.7rem !important;
+  }
+
+  .field-icon {
+    width: 16px !important;
+    height: 16px !important;
+    margin-left: 0.2rem !important;
+  }
+
+  .field-icon svg {
+    width: 7px !important;
+    height: 7px !important;
+  }
+
+  .date-input-pill {
+    font-size: 0.7rem !important;
+  }
+
+  .btn-search {
+    padding: 0.6rem 1rem !important;
+    font-size: 0.75rem !important;
+    min-width: auto !important;
+  }
+
+  /* ── Cars page search pill centering ── */
+  .cars-page-search-pill {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 0 0.5rem !important;
+  }
+
+  .cars-page-search-pill .search-pill-shell {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .cars-page-search-pill .search-pill {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .search-divider {
+    display: none !important;
+  }
+}
+
+/* ── Progressive shrink below 1100px ── */
+@media (max-width: 1050px) {
+
+  .search-field,
+  .search-field-date {
+    flex: 1 1 25% !important;
+    min-width: 100px !important;
+    padding-inline: 0.3rem !important;
+  }
+
+  .custom-select-trigger {
+    font-size: 0.65rem !important;
+  }
+
+  .field-label {
+    font-size: 0.45rem !important;
+  }
+
+  .btn-search {
+    padding: 0.55rem 0.9rem !important;
+    font-size: 0.7rem !important;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .search-field,
+  .search-field-date {
+    flex: 1 1 22% !important;
+    min-width: 90px !important;
+    padding-inline: 0.25rem !important;
+  }
+
+  .custom-select-trigger {
+    font-size: 0.6rem !important;
+  }
+
+  .field-label {
+    font-size: 0.42rem !important;
+  }
+
+  .field-icon {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  .field-icon svg {
+    width: 6px !important;
+    height: 6px !important;
+  }
+
+  .btn-search {
+    padding: 0.5rem 0.8rem !important;
+    font-size: 0.65rem !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-bottom-content {
+    justify-content: space-between;
+    gap: 0.85rem;
+  }
+
+  .features-header .section-title {
+    font-size: 2.15rem;
+  }
+
+  .main-huge-title {
+    font-size: 2rem;
+  }
+
+  .main-description {
+    max-width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .main-cta-btn {
+    padding: 0.7rem 1.45rem;
+    font-size: 0.84rem;
+  }
+
+  .brand-carousel-pin-wrap {
+    height: 96px;
+  }
+
+  .brand-carousel-section {
+    padding: 1.1rem 0;
+  }
+
+  .carousel-track {
+    gap: 3rem;
+    padding: 0 1.5rem;
+  }
+
+  .brand-svg-logo {
+    height: 42px;
+    min-width: 42px;
+  }
+
+  .our-cars-title {
+    font-size: 2rem;
+  }
+
+  .our-cars-subtitle {
+    font-size: 0.92rem;
+  }
+
+  .car-luxury-card {
+    height: 360px;
+  }
+
+  .header-main-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.85rem;
+  }
+
+  .btn-view-all-reviews {
+    width: auto;
+    text-align: center;
+  }
+
+  .testimonials-cards {
+    gap: 1.25rem;
+  }
+
+  .testimonial-card {
+    min-width: 0;
+    max-width: 100%;
+    padding: 1.55rem;
+  }
+
+  .testimonials-stats {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-pill-shell {
+    gap: 0.45rem;
+    width: 90%;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .search-pill {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .search-field,
+  .search-field-date {
+    min-width: 0;
+  }
+
+  .search-pill-panel {
+    width: 100%;
+  }
+
+  .search-pill-toggle {
+    width: 100%;
+  }
+
+  .btn-bottom-booking {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .features-header .section-title {
+    font-size: 1.95rem;
+  }
+
+  .main-huge-title {
+    font-size: 1.8rem;
+  }
+
+  .main-cta-btn {
+    padding: 0.75rem 1.2rem;
+    font-size: 0.8rem;
+    width: fit-content;
+  }
+
+  .brand-carousel-pin-wrap {
+    height: 88px;
+  }
+
+  .brand-carousel-section {
+    padding: 0.95rem 0;
+  }
+
+  .carousel-track {
+    gap: 2.3rem;
+    padding: 0 1rem;
+  }
+
+  .brand-item {
+    padding: 0.6rem;
+  }
+
+  .brand-svg-logo {
+    height: 36px;
+    min-width: 36px;
+  }
+
+  .our-cars-title {
+    font-size: 1.8rem;
+  }
+
+  .car-luxury-card {
+    height: 340px;
+  }
+
+  .btn-book-luxury {
+    font-size: 0.76rem;
+    padding: 0.35rem 0.35rem 0.35rem 0.85rem;
+    gap: 0.55rem;
+  }
+
+  .btn-book-luxury .btn-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .testimonials-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .testimonials-title {
+    font-size: 1.75rem;
+  }
+
+  .btn-view-all-reviews {
+    padding: 0.75rem 1rem;
+    font-size: 0.88rem;
+    border-width: 1px;
+  }
+
+  .testimonials-stats {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
+    padding-top: 2rem;
+    justify-content: space-between;
+  }
+
+  .stat-item:last-child {
+    grid-column: auto;
+  }
+
+  .stat-value {
+    font-size: 1.45rem;
+  }
+
+  .footer-main-body {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer-logo-text {
+    font-size: 1.2rem;
+  }
+
+  .footer-stats-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-stat {
+    min-width: 0;
+    flex: 1 1 0;
+  }
+
+  .footer-stat .stat-label {
+    font-size: 0.64rem;
+  }
+
+  .footer-stat-divider {
+    display: block;
+    height: 34px;
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-pill {
+    padding: 0.7rem;
+  }
+
+  .search-field,
+  .search-field-date {
+    padding-inline: 0.35rem;
+  }
+
+  .field-label {
+    font-size: 0.48rem;
+  }
+
+  .date-input-pill,
+  .custom-select-trigger {
+    font-size: 0.72rem;
+  }
+
+  .btn-search {
+    padding: 0.85rem 1rem;
+  }
+
+  .features-header .section-title {
+    font-size: 1.65rem;
+  }
+
+  .main-huge-title {
+    font-size: 1.6rem;
+  }
+
+  .main-cta-btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.78rem;
+    padding: 0.72rem 1rem;
+  }
+
+  .brand-carousel-pin-wrap {
+    height: 80px;
+  }
+
+  .carousel-track {
+    gap: 1.6rem;
+    padding: 0 0.75rem;
+  }
+
+  .brand-svg-logo {
+    height: 32px;
+    min-width: 32px;
+  }
+
+  .our-cars-title {
+    font-size: 1.6rem;
+  }
+
+  .car-luxury-card {
+    height: 320px;
+  }
+
+  .card-overlay-cars {
+    padding: 1rem;
+  }
+
+  .btn-book-luxury {
+    font-size: 0.72rem;
+  }
+
+  .btn-book-luxury .btn-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .testimonials-title {
+    font-size: 1.55rem;
+  }
+
+  .btn-view-all-reviews {
+    width: auto;
+  }
+
+  .testimonials-stats {
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    justify-content: space-between;
+  }
+
+  .stat-item:last-child {
+    grid-column: auto;
+  }
+
+  .testimonials-stats .stat-item {
+    flex: 1 1 0;
+  }
+
+  .testimonials-stats .stat-value {
+    font-size: 1.1rem;
+  }
+
+  .footer-stats-bar {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 0.35rem;
+  }
+
+  .footer-stat {
+    flex: 1 1 0;
+  }
+
+  .footer-stat .stat-label {
+    font-size: 0.52rem;
+  }
+
+  .footer-stat .stat-num {
+    font-size: 1.05rem;
+  }
+
+  .footer-logo-text {
+    font-size: 1.05rem;
+  }
+}

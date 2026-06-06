@@ -1,0 +1,422 @@
+.our-cars-section {
+  padding: 2.5rem 5%;
+  background-color: #000000;
+  color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-cars-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+.our-cars-header-text {
+  max-width: 800px;
+  text-align: left;
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.our-cars-title {
+  margin-top: 0;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 0rem;
+  letter-spacing: -1px;
+}
+
+.our-cars-subtitle {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+/* Swiper Layout with Frame */
+.our-cars-swiper-container {
+  width: 100%;
+  max-width: 1400px;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 16px;
+}
+
+.our-cars-swiper {
+  padding: 5px !important;
+}
+
+/* Luxury Card */
+.our-cars-swiper .car-luxury-card {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  height: 270px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.our-cars-swiper .car-luxury-card:hover {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.our-cars-swiper .card-image-bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s ease;
+}
+
+.our-cars-swiper .car-luxury-card:hover .card-image-bg {
+  transform: scale(1.03);
+}
+
+/* Shared Card Styles (used by both OurCarsSection and CarsPage) */
+.card-overlay-cars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, 0.3) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.card-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.car-name-display {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem 0;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.car-price-display {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+.car-luxury-card.unavailable {
+  opacity: 0.7;
+}
+
+.unavailable-badge {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  padding: 0.4rem 0.9rem;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ff4d4d;
+  border: 1px solid rgba(255, 77, 77, 0.3);
+}
+
+.btn-book-luxury {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  border-radius: 50px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.btn-book-luxury:hover {
+  background: #eb000c;
+  border-color: #e50914;
+  color: #f9f7f7;
+}
+
+.btn-icon {
+  width: 32px;
+  height: 32px;
+  background: #e50914;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.btn-book-luxury:hover .btn-icon {
+  background: #efeeee;
+  color: #e50914;
+}
+
+.btn-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Compact Overrides for Homepage Swiper */
+.our-cars-swiper .card-overlay-cars {
+  padding: 0.8rem;
+}
+
+.our-cars-swiper .car-name-display {
+  font-size: 0.8rem;
+  margin: 0 0 0.15rem 0;
+}
+
+.our-cars-swiper .car-price-display {
+  font-size: 0.65rem;
+}
+
+.our-cars-swiper .car-luxury-card.unavailable {
+  opacity: 0.7;
+}
+
+.our-cars-swiper .unavailable-badge {
+  top: 0.8rem;
+  left: 0.8rem;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.65rem;
+}
+
+.our-cars-swiper .btn-book-luxury {
+  gap: 0.4rem;
+  padding: 0.3rem 0.3rem 0.3rem 0.7rem;
+  font-size: 0.7rem;
+}
+
+.our-cars-swiper .btn-book-luxury:hover {
+  background: #eb000c;
+  border-color: #e50914;
+  color: #f9f7f7;
+}
+
+.our-cars-swiper .btn-icon {
+  width: 26px;
+  height: 26px;
+}
+
+.our-cars-swiper .btn-book-luxury:hover .btn-icon {
+  background: #efeeee;
+  color: #e50914;
+}
+
+.our-cars-swiper .btn-icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* View All Cars Button (header) */
+.btn-more-cars-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.3rem 0.3rem 0.3rem 0.7rem;
+  border-radius: 50px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.7rem;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.btn-more-cars-header:hover {
+  background: #eb000c;
+  border-color: #e50914;
+  color: #f9f7f7;
+}
+
+.btn-more-cars-header .btn-icon {
+  width: 26px;
+  height: 26px;
+  background: #e50914;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.btn-more-cars-header:hover .btn-icon {
+  background: #efeeee;
+  color: #e50914;
+}
+
+.btn-more-cars-header .btn-icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+.carousel-navigation-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  margin-top: 16px;
+}
+
+
+
+/* Loading/Error/Empty States */
+.our-cars-section.loading, .our-cars-section.error, .our-cars-section.empty {
+  min-height: 400px;
+  justify-content: center;
+}
+
+.section-loader, .error-message, .empty-state {
+  text-align: center;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  border-top-color: #e50914;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1.5rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.btn-retry {
+  background: #e50914;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-weight: 700;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/* Custom Navigation Controls for OurCars */
+.ourcars-button-prev,
+.ourcars-button-next {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #ffffff;
+  outline: none;
+}
+
+.ourcars-button-prev:hover,
+.ourcars-button-next:hover {
+  background: #e50914;
+  border-color: #e50914;
+  color: #ffffff;
+}
+
+.ourcars-button-prev svg,
+.ourcars-button-next svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .our-cars-swiper-container {
+    /* breakpoints handled by Swiper */
+  }
+}
+
+@media (max-width: 992px) {
+  .our-cars-title {
+    font-size: 2.8rem;
+  }
+  .our-cars-header-container {
+    align-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .our-cars-swiper-container {
+    padding: 1rem;
+  }
+  .car-luxury-card {
+    height: 400px;
+  }
+  .our-cars-title {
+    font-size: 2.2rem;
+  }
+  .btn-more-cars-header {
+    width: auto;
+    justify-content: center;
+    padding: 0.4rem 0.4rem 0.4rem 0.9rem;
+    font-size: 0.82rem;
+  }
+
+  .btn-more-cars-header .btn-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .carousel-navigation-controls {
+    gap: 0.6rem;
+  }
+
+  .ourcars-button-prev,
+  .ourcars-button-next {
+    width: 38px;
+    height: 38px;
+  }
+}

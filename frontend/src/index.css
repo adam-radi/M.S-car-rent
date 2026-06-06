@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  direction: ltr;
+}
+
+/* Arabic: text translates; layout stays in place */
+html.lang-ar,
+html.lang-ar body {
+  font-family: 'Cairo', 'Plus Jakarta Sans', sans-serif;
+}

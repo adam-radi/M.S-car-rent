@@ -1,0 +1,325 @@
+.cars-page-container-premium {
+  background-color: #000000;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 0% 3%;
+  /* To account for navbar */
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cars-page-header-premium {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.cars-page-header-premium .our-cars-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+  color: #ffffff;
+}
+
+.cars-page-header-premium .our-cars-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  max-width: 800px;
+  margin-bottom: 3rem;
+}
+
+.cars-page-search-pill {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+/* Adjust the search pill slightly if needed for the page layout */
+.cars-page-search-pill .search-pill {
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  max-width: 1300px;
+}
+
+.cars-page-body-premium {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.section-loader,
+.empty-state {
+  text-align: center;
+  margin-top: 4rem;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-loader .spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  border-top-color: #e50914;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1.5rem;
+}
+
+.empty-state h3 {
+  font-size: 2rem;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.empty-state p {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 2rem;
+}
+
+.btn-retry {
+  background: #e50914;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 2.5rem;
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-retry:hover {
+  background: #c40812;
+}
+
+/* --- Styles for Grid and Cards aligned with Home Page --- */
+.cars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 columns on large screen */
+  gap: 1.5rem;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.car-luxury-card {
+  position: relative;
+  height: 270px;
+  border-radius: 24px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  background: rgba(20, 20, 24, 0.65);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+.car-luxury-card:hover {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  /* Matching Home page shadow */
+  transform: translateY(-5px);
+}
+
+.card-image-bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.6s ease;
+}
+
+.car-luxury-card:hover .card-image-bg {
+  transform: scale(1.03);
+  /* Matching Home page zoom */
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1200px) {
+  .cars-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .cars-page-header-premium .our-cars-title {
+    font-size: 2.8rem;
+  }
+
+  .cars-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .cars-page-header-premium .our-cars-title {
+    font-size: 2.2rem;
+  }
+
+  .cars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .car-luxury-card {
+    height: 400px;
+  }
+}
+
+/* ── Date inputs inside search pill ── */
+.search-field-date {
+  flex: 0.8;
+}
+
+.date-trigger-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.date-input-pill {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  flex: 1;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.date-input-pill::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.date-input-pill::-webkit-datetime-edit {
+  color: #ffffff;
+}
+
+.date-input-pill::-webkit-datetime-edit-fields-wrapper {
+  padding: 0;
+}
+
+.date-trigger-wrapper .field-icon {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+/* ── Availability banner ── */
+.availability-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(229, 9, 20, 0.1);
+  border: 1px solid rgba(229, 9, 20, 0.35);
+  border-radius: 50px;
+  padding: 0.6rem 1.4rem;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  animation: slideDownIn 0.3s ease-out;
+}
+
+.availability-banner-icon {
+  font-size: 1.1rem;
+}
+
+.availability-banner strong {
+  color: #ffffff;
+}
+
+.availability-banner-clear {
+  margin-left: auto;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 50px;
+  padding: 0.25rem 0.8rem;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.availability-banner-clear:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+/* ── Unavailable card state ── */
+.car-luxury-card.unavailable-state .card-image-bg {
+  filter: brightness(0.85) saturate(0.9);
+}
+
+.car-luxury-card.unavailable-state {
+  border-color: rgba(229, 9, 20, 0.3);
+}
+
+.unavailable-badge-cars {
+  position: absolute;
+  top: 1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(229, 9, 20, 0.9);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.35rem 1rem;
+  border-radius: 50px;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+  z-index: 5;
+}
+
+/* ── Disabled booking button ── */
+.btn-unavailable-luxury {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: rgba(255, 255, 255, 0.4) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  cursor: not-allowed !important;
+  pointer-events: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}

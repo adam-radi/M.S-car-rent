@@ -1,0 +1,412 @@
+/* AboutPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+.abp-container {
+  font-family: 'Outfit', sans-serif;
+  color: #e5e7eb;
+  background-color: #07101f;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+
+/* --- Hero Section --- */
+.abp-hero {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #07101f 0%, #0f172a 55%, #111827 100%);
+  margin-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.abp-hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.04) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(229, 9, 20, 0.06) 0%, transparent 40%);
+  animation: abp-rotate 20s linear infinite;
+}
+
+@keyframes abp-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.abp-hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.abp-hero-title {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #fff 0%, #e50914 60%, #ff6b6b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -2px;
+}
+
+.abp-hero-subtitle {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* --- Section Layout --- */
+.abp-section {
+  max-width: 1200px;
+  margin: 0 auto 100px auto;
+  padding: 0 20px;
+}
+
+.abp-section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.abp-section-tag {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(229, 9, 20, 0.05);
+  border: 1px solid rgba(229, 9, 20, 0.1);
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #e50914;
+  margin-bottom: 15px;
+}
+
+
+.abp-section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* --- Why Choose Us (Grid/Bento) --- */
+.abp-why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.abp-why-card {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-radius: 24px;
+  background: rgba(20, 20, 24, 0.65);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+.abp-why-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25), 0 0 20px rgba(229, 9, 20, 0.08);
+}
+
+.abp-card-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(229, 9, 20, 0.08);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  color: #e50914;
+}
+
+
+.abp-card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.abp-card-text {
+  font-size: 1rem;
+  color: #86868b;
+  line-height: 1.6;
+}
+
+/* --- Services Section --- */
+.abp-services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.abp-service-item {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  border-left: 3px solid rgba(229, 9, 20, 0.35);
+  transition: 0.3s;
+  border-radius: 24px;
+  background: rgba(20, 20, 24, 0.65);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+.abp-service-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-left-color: #e50914;
+  transform: translateX(5px);
+}
+
+.abp-service-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgba(229, 9, 20, 0.2);
+  margin-right: 40px;
+  min-width: 60px;
+}
+
+.abp-service-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.abp-service-content p {
+  color: #86868b;
+}
+
+/* --- How it Works --- */
+.abp-steps-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  gap: 30px;
+}
+
+.abp-steps-container::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  right: 50px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 0;
+}
+
+.abp-step {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.abp-step-circle {
+  width: 80px;
+  height: 80px;
+  background: #111;
+  border: 2px solid #e50914;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.3);
+}
+
+
+.abp-step-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.abp-step-desc {
+  font-size: 0.9rem;
+  color: #86868b;
+  line-height: 1.5;
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 992px) {
+  .abp-why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .abp-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .abp-steps-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .abp-steps-container::before {
+    display: none;
+  }
+
+  .abp-hero-title {
+    font-size: 3rem;
+  }
+}
+
+/* --- Interactive Process Map --- */
+.abp-process-map {
+  padding: 60px;
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  background: rgba(20, 20, 24, 0.65);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+.abp-process-map-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.abp-map-visual {
+  position: relative;
+  height: 400px;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.abp-map-node {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2;
+  border-radius: 24px;
+  background: rgba(20, 20, 24, 0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+.abp-map-node.active {
+  border-color: #e50914;
+  box-shadow: 0 0 30px rgba(229, 9, 20, 0.3);
+  transform: scale(1.1);
+}
+
+.abp-map-node i {
+  font-size: 2rem;
+  color: #e50914;
+}
+
+.abp-map-node span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #888;
+}
+
+.abp-map-node.active span {
+  color: #fff;
+}
+
+.abp-map-connector {
+  position: absolute;
+  background: linear-gradient(90deg, #e50914, transparent);
+  height: 2px;
+  z-index: 1;
+  transform-origin: left center;
+}
+
+.abp-map-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.abp-map-step-card {
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.04);
+  border-left: 4px solid transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.abp-map-step-card.active {
+  background: rgba(255, 255, 255, 0.08);
+  border-left-color: #e50914;
+}
+
+.abp-map-step-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.abp-map-step-card p {
+  font-size: 0.95rem;
+  color: #888;
+  line-height: 1.5;
+}
+
+.abp-map-step-card.active p {
+  color: #ccc;
+}
+
+@media (max-width: 992px) {
+  .abp-process-map-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .abp-map-visual {
+    height: 300px;
+  }
+}

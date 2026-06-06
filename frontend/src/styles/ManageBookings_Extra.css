@@ -1,0 +1,19 @@
+.input-with-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.input-with-label input {
+  flex: 1;
+}
+
+.price-text {
+  font-weight: 700;
+  color: #2c5282;
+}
+
+.modal-content {
+  max-width: 500px;
+  width: 90%;
+}

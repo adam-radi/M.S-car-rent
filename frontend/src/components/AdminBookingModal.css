@@ -1,0 +1,289 @@
+/* ── AdminBookingModal – Glassmorphism style matching ManageCars modal ── */
+
+.abm-backdrop { align-items: center; }
+
+.abm-box {
+  max-width: 720px !important;
+  max-height: 90vh;
+}
+
+/* Scrollable form body */
+.abm-form-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.8rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.08) transparent;
+}
+
+.abm-form-body::-webkit-scrollbar { width: 5px; }
+.abm-form-body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+}
+
+.abm-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* ── Mode toggle tabs ── */
+.abm-mode-tabs {
+  display: flex;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 6px;
+}
+
+.abm-mode-tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.abm-mode-tab:hover {
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.abm-mode-tab.active {
+  background: rgba(229, 9, 20, 0.12);
+  color: #e50914;
+  border: 1px solid rgba(229, 9, 20, 0.2);
+}
+
+/* ── User selection list ── */
+.abm-user-list {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  max-height: 180px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.08) transparent;
+}
+
+.abm-user-list::-webkit-scrollbar { width: 4px; }
+.abm-user-list::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+}
+
+.abm-user-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.abm-user-item:last-child { border-bottom: none; }
+.abm-user-item:hover { background: rgba(255, 255, 255, 0.04); }
+
+.abm-user-item.selected {
+  background: rgba(229, 9, 20, 0.08);
+}
+
+.abm-user-item.selected .abm-user-avatar {
+  background: #e50914;
+  color: white;
+}
+
+.abm-user-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+
+.abm-user-item > div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.abm-user-item strong {
+  font-size: 0.88rem;
+  color: white;
+  font-weight: 600;
+}
+
+.abm-user-item span {
+  font-size: 0.76rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.abm-empty {
+  padding: 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+/* ── Price preview ── */
+.abm-price-preview {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 1rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.abm-price-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.abm-price-row.discount { color: #10b981; }
+
+.abm-price-row.total {
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  font-weight: 800;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+/* ── Error message ── */
+.abm-error {
+  background: rgba(229, 9, 20, 0.08);
+  border: 1px solid rgba(229, 9, 20, 0.2);
+  border-radius: 12px;
+  padding: 12px 16px;
+  color: #ff6b6b;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+/* Dark date inputs */
+.clean-input[type="date"] {
+  color-scheme: dark;
+}
+
+/* ── Calendar Toggle ── */
+.calendar-trigger {
+  width: 94%;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.calendar-trigger:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.calendar-trigger.selected {
+  border-color: rgba(229, 9, 20, 0.4);
+  background: rgba(229, 9, 20, 0.08);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.calendar-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(12px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.calendar-modal-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.calendar-modal-content {
+  background: #0f0f0f;
+  padding: 3rem;
+  border-radius: 32px;
+  position: relative;
+  max-width: 500px;
+  width: 95%;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(20px);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.calendar-modal-overlay.active .calendar-modal-content {
+  transform: translateY(0);
+}
+
+.close-calendar {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.close-calendar:hover {
+  background: #e50914;
+  border-color: #e50914;
+  transform: rotate(90deg);
+}

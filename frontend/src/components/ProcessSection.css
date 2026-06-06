@@ -1,0 +1,187 @@
+.process-section {
+    background-color: #000000;
+    padding: 100px 20px;
+    color: #ffffff;
+    font-family: 'Inter', 'Roboto Mono', monospace;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.process-section.embedded {
+    background-color: transparent;
+    padding: 20px 0;
+    border: none;
+}
+
+.process-section.embedded .process-container {
+    max-width: 100%;
+}
+
+
+
+.process-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.process-title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 100px;
+    color: #ffffff;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 1px;
+}
+
+
+.process-steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    gap: 20px;
+}
+
+.process-step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-10px);
+}
+
+.icon-wrapper {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.icon-box {
+    width: 160px;
+    height: 160px;
+    border: 2px dashed #ff0000;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: rgba(255, 255, 255, 0.02);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+.process-step:hover .icon-box {
+    border-color: #ff0000;
+    background: rgba(255, 0, 0, 0.05);
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.1);
+}
+
+.main-icon {
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.main-icon.large {
+    font-size: 70px;
+}
+
+.sub-icon {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    font-size: 28px;
+    color: #ff0000;
+}
+
+.sub-icon-alt {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    font-size: 24px;
+    color: #ff0000;
+}
+
+.sub-icon-driving {
+    position: absolute;
+    top: 55px;
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+.step-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.step-content p {
+    font-size: 0.95rem;
+    color: #888888;
+    line-height: 1.6;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+/* Arrows */
+.process-arrow {
+    position: absolute;
+    width: 220px;
+    height: 100px;
+    z-index: 1;
+}
+
+.arrow-1 {
+    top: 30px;
+    left: 20%;
+}
+
+.arrow-2 {
+    top: 90px;
+    right: 20%;
+}
+
+
+
+@media (max-width: 1024px) {
+    .process-arrow {
+        display: none;
+    }
+    
+    .process-steps {
+        flex-direction: column;
+        gap: 60px;
+        align-items: center;
+    }
+}
+
+.process-section.embedded .process-arrow {
+    width: 160px;
+}
+
+.process-section.embedded .arrow-1 {
+    left: 25%;
+}
+
+.process-section.embedded .arrow-2 {
+    right: 25%;
+}
+
+
+/* Animations */
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.process-arrow svg path {
+    stroke-dasharray: 8;
+    animation: dash 20s linear infinite;
+}

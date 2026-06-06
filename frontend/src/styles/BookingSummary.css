@@ -1,0 +1,136 @@
+.booking-summary.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 1.5rem;
+}
+
+.summary-card {
+  background: #1a1a1a;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 32px;
+  padding: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+}
+
+.summary-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.summary-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.summary-details {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 2rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.summary-row span {
+  color: #718096;
+}
+
+.summary-row strong {
+  color: #ffffff;
+}
+
+.summary-row.total {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.summary-notes {
+  margin-bottom: 2rem;
+}
+
+.summary-notes label {
+  font-size: 0.7rem;
+  color: #718096;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.summary-notes p {
+  font-size: 0.95rem;
+  color: #a0aec0;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.summary-actions {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-back-summary {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-back-summary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.btn-confirm {
+  flex: 1.5;
+  padding: 1rem;
+  border-radius: 14px;
+  border: none;
+  background-color: #e50914;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 20px rgba(229, 9, 20, 0.2);
+}
+
+.btn-confirm:hover {
+  background: #ff1f2b;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(229, 9, 20, 0.4);
+}
+
+.payment-hint {
+  font-size: 0.8rem;
+  text-align: center;
+  color: #4a5568;
+}

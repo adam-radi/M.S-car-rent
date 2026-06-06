@@ -1,0 +1,369 @@
+.booking-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 2rem 3rem;
+  color: #ffffff;
+}
+
+.booking-header {
+  margin-bottom: 3rem;
+}
+
+.booking-header h1 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+/* ── Back Button Booking ── */
+.btn-back-booking {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  text-decoration: none;
+}
+
+.btn-back-booking:hover {
+  background: rgba(229, 9, 20, 0.2);
+  border-color: #e50914;
+  color: #ffffff;
+  transform: translateX(-5px);
+  box-shadow: 0 5px 15px rgba(229, 9, 20, 0.3);
+}
+
+.booking-content {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 3rem;
+  align-items: stretch;
+}
+
+/* ── Car Summary ── */
+.booking-car-summary {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  background: rgba(20, 20, 24, 0.65);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+.summary-image {
+  width: 100%;
+  height: 300px;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.summary-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.summary-info {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.summary-info h2 {
+  font-size: 1.8rem;
+  margin: 0 0 1rem;
+}
+
+/* ── Form Card ── */
+.booking-form-card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  background: rgba(20, 20, 24, 0.65);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.booking-alert {
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  border: 1.5px solid transparent;
+}
+
+.booking-alert.error {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #f87171;
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.booking-alert.success {
+  background-color: rgba(34, 197, 94, 0.1);
+  color: #4ade80;
+  border-color: rgba(34, 197, 94, 0.3);
+}
+
+.booking-form .form-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.booking-form .form-row .form-group {
+  flex: 1;
+  margin-bottom: 0;
+  min-width: 0; /* Prevents overflow and overlap */
+}
+
+.booking-form .form-row .form-group input {
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+.booking-form .form-group {
+  margin-bottom: 1rem;
+  flex: 1;
+  width: 100%;
+}
+
+.booking-form label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #a0aec0;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.booking-form .input{
+  width: 100% !important;
+}
+.booking-form input,
+.booking-form textarea {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  background: #2d2d2d !important;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.booking-form input:focus,
+.booking-form textarea:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+/* ── Calendar Toggle ── */
+.calendar-trigger-book {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  background: #2d2d2d;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #a0aec0;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.calendar-trigger:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.calendar-trigger.selected {
+  border-color: rgba(229, 9, 20, 0.4);
+  background: rgba(229, 9, 20, 0.08);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.calendar-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(12px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.calendar-modal-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.calendar-modal-content {
+  padding: 3rem;
+  position: relative;
+  max-width: 500px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(20px);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 24px;
+  background: rgba(20, 20, 24, 0.85);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+}
+
+.calendar-modal-overlay.active .calendar-modal-content {
+  transform: translateY(0);
+}
+
+.close-calendar {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.close-calendar:hover {
+  background: #e50914;
+  border-color: #e50914;
+  transform: rotate(90deg);
+}
+
+/* ── Price Preview ── */
+.price-preview {
+  width: 100%;
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+  border-radius: 20px;
+  background: rgba(20, 20, 24, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.price-preview h3 {
+  margin: 0 0 1.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.preview-row.total {
+  border-top: 1.5px solid rgba(255, 255, 255, 0.15);
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+/* ── Submit Button ── */
+.btn-confirm-booking {
+  width: 100%;
+  background: #e50914;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 30px rgba(229, 9, 20, 0.3);
+  box-sizing: border-box;
+  margin-top: auto; /* Pushes the button to the bottom */
+}
+
+.btn-confirm-booking:hover:not(:disabled) {
+  background: #ff1f2b;
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(229, 9, 20, 0.5);
+}
+
+.btn-confirm-booking:disabled {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.2);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+@media (max-width: 1024px) {
+  .booking-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .booking-container {
+    padding: 5rem 1rem 2rem;
+  }
+  
+  .booking-form-card {
+    padding: 2.5rem 1.5rem;
+  }
+}

@@ -1,0 +1,407 @@
+.manage-clients {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  color: var(--text-primary);
+}
+
+.manage-clients-header {
+  margin-bottom: 1.5rem;
+}
+
+.manage-clients-header h1 {
+  margin: 0 0 0.35rem;
+  font-size: 2.1rem;
+  font-weight: 800;
+}
+
+.manage-clients-header p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.client-lookup-panel,
+.client-overview-card,
+.client-bookings-section {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035) 0%, rgba(255, 255, 255, 0.018) 100%),
+    rgba(30, 38, 55, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(10px);
+}
+
+.client-lookup-panel {
+  padding: 1.3rem;
+  border-radius: 24px;
+  margin-bottom: 1.4rem;
+}
+
+.client-lookup-form {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr auto;
+  gap: 1rem;
+  align-items: end;
+}
+
+.lookup-field label,
+.filter-slot label {
+  display: block;
+  margin-bottom: 0.55rem;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.lookup-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 50px;
+  padding: 0 1rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.lookup-input-wrap svg {
+  color: #7ea6ff;
+}
+
+.lookup-input-wrap input,
+.filter-slot.date input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  color: #edf1f6;
+  outline: none;
+}
+
+.filter-slot.date input {
+  min-height: 44px;
+  padding: 0 0.85rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.lookup-submit,
+.crm-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  min-height: 50px;
+  padding: 0 1.2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(126, 166, 255, 0.25);
+  background: linear-gradient(135deg, rgba(67, 97, 238, 0.26), rgba(59, 130, 246, 0.18));
+  color: #edf1f6;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.lookup-submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.client-lookup-alert,
+.client-lookup-empty {
+  margin-top: 1rem;
+  padding: 0.95rem 1rem;
+  border-radius: 16px;
+}
+
+.client-lookup-alert.error {
+  background: rgba(220, 38, 38, 0.15);
+  color: #fecaca;
+}
+
+.client-lookup-alert.loading {
+  background: rgba(59, 130, 246, 0.12);
+  color: #bfdbfe;
+}
+
+.client-lookup-empty {
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.client-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.client-overview-card {
+  border-radius: 22px;
+  padding: 1.2rem;
+}
+
+.client-overview-card.hero {
+  grid-column: span 6;
+  background:
+    radial-gradient(circle at top right, rgba(75, 145, 255, 0.18) 0%, rgba(75, 145, 255, 0) 42%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035) 0%, rgba(255, 255, 255, 0.018) 100%),
+    rgba(30, 37, 51, 0.95);
+}
+
+.client-overview-card.stat {
+  grid-column: span 3;
+}
+
+.client-overview-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.1rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  color: #7ea6ff;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.client-overview-top h2,
+.client-overview-card.stat strong {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+.client-overview-card.stat span {
+  display: block;
+  color: var(--text-secondary);
+  margin-bottom: 0.65rem;
+}
+
+.client-meta-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.client-meta-list span {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  margin-bottom: 0.35rem;
+}
+
+.loyal-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 0.95rem;
+  border-radius: 999px;
+  background: rgba(245, 158, 11, 0.18);
+  color: #fcd34d;
+  font-weight: 800;
+}
+
+.client-bookings-section {
+  border-radius: 24px;
+  padding: 1.2rem;
+}
+
+.client-bookings-topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.client-bookings-topbar h3 {
+  margin: 0 0 0.25rem;
+}
+
+.client-bookings-topbar p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.client-actions-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.client-list-section {
+  margin-bottom: 1rem;
+}
+
+.client-list-block {
+  margin-bottom: 1rem;
+}
+
+.client-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.client-list-header h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.client-list-header p {
+  margin: 0.3rem 0 0;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+}
+
+.client-list-header span {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.client-list-table-wrap {
+  margin-bottom: 1rem;
+}
+
+.client-search-results-note {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.client-row-clickable,
+.client-row-active {
+  cursor: pointer;
+}
+
+.client-row-active td {
+  background: rgba(126, 166, 255, 0.12);
+}
+
+.client-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(160px, 1fr));
+  gap: 0.9rem;
+}
+
+.crm-status-pill,
+.crm-payment-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 88px;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.crm-status-pill.status-pending { background: rgba(250, 204, 21, 0.16); color: #fde68a; }
+.crm-status-pill.status-confirmed { background: rgba(52, 211, 153, 0.16); color: #a7f3d0; }
+.crm-status-pill.status-active { background: rgba(96, 165, 250, 0.16); color: #bfdbfe; }
+.crm-status-pill.status-completed { background: rgba(148, 163, 184, 0.18); color: #e2e8f0; }
+.crm-status-pill.status-cancelled,
+.crm-status-pill.status-rejected { background: rgba(248, 113, 113, 0.16); color: #fecaca; }
+
+.crm-payment-pill.is-paid { background: rgba(34, 197, 94, 0.16); color: #bbf7d0; }
+.crm-payment-pill.is-unpaid { background: rgba(248, 113, 113, 0.16); color: #fecaca; }
+.crm-payment-pill.is-partial { background: rgba(251, 191, 36, 0.18); color: #fde68a; }
+
+.crm-actions-cell {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.crm-action {
+  min-height: 36px;
+  padding: 0 0.9rem;
+  font-size: 0.82rem;
+}
+
+.crm-action.ghost {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.crm-action.danger {
+  border-color: rgba(248, 113, 113, 0.26);
+  background: rgba(185, 28, 28, 0.16);
+}
+
+.crm-modal-box {
+  max-width: 760px;
+}
+
+.crm-modal-body {
+  padding: 1.5rem 2rem 2rem;
+}
+
+.crm-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.crm-detail-grid span,
+.crm-notes-box span {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.crm-notes-box {
+  margin-top: 1.25rem;
+  padding: 1rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.crm-notes-box p {
+  margin: 0;
+  color: #edf1f6;
+}
+
+@media (max-width: 1200px) {
+  .client-lookup-form,
+  .client-bookings-topbar {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .client-overview-card.hero,
+  .client-overview-card.stat {
+    grid-column: span 12;
+  }
+
+  .client-filter-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .client-meta-list,
+  .crm-detail-grid,
+  .client-filter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .crm-actions-cell {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

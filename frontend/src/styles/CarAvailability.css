@@ -1,0 +1,85 @@
+/* Adjust standard calendar styles */
+.react-calendar {
+  width: 100%;
+  max-width: 400px;
+  background: #2d2d2d;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  font-family: inherit;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  margin: 1rem ;
+  color: #fff;
+}
+
+.react-calendar__navigation button {
+  min-width: 44px;
+  background: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: rgba(229, 9, 20, 0.2);
+  color: #e50914;
+}
+
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 0.75em;
+  color: #e50914;
+}
+
+.react-calendar__tile {
+  padding: 0.75em 0.5em;
+  background: none;
+  text-align: center;
+  font-weight: 600;
+  color: #ccc;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+/* Base style for available dates */
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  color: #fff;
+}
+
+.react-calendar__tile--now {
+  background: rgba(229, 9, 20, 0.1);
+  border-radius: 4px;
+  color: #e50914;
+  border: 1px solid rgba(229, 9, 20, 0.5);
+}
+
+/* Booked dates class we inject in CarDetailPage */
+.booked-date {
+  background-color: rgba(229, 9, 20, 0.8) !important;
+  color: #fff !important;
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* Removed duplicated .car-availability-section to allow CarDetailPage.css to apply its styles */
+
+.booked-legend {
+  color: #fff;
+  font-weight: 800;
+  background-color: #e50914;
+  padding: 0.1rem 0.6rem;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(229, 9, 20, 0.5);
+}
+
+.calendar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

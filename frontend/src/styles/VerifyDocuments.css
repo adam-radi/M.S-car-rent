@@ -1,0 +1,128 @@
+.verify-documents {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sub-text {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.btn-view {
+  background-color: var(--primary-red);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.btn-view:hover {
+  opacity: 0.9;
+}
+
+/* ── Review Modal ── */
+.modal-content.large {
+  max-width: 900px;
+  width: 95%;
+}
+
+.review-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+}
+
+.document-preview {
+  background-color: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  min-height: 400px;
+}
+
+.document-preview img {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.review-actions-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.user-summary h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.notes-section label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.notes-section textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  background-color: rgba(255, 255, 255, 0.03);
+  color: var(--text-primary);
+  font-family: inherit;
+  resize: none;
+}
+
+.notes-section textarea:focus {
+  border-color: var(--primary-red);
+  outline: none;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn-approve {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-reject {
+  background-color: transparent;
+  color: #ef4444;
+  border: 2px solid #ef4444;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-reject:hover {
+  background-color: rgba(239, 68, 68, 0.1);
+}
+
+@media (max-width: 768px) {
+  .review-layout {
+    grid-template-columns: 1fr;
+  }
+}

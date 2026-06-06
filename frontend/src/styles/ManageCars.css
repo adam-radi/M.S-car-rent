@@ -1,0 +1,700 @@
+.manage-cars-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.manage-cars-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+.header-title h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+}
+
+.header-title p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-top: 5px;
+}
+
+.add-vehicle-btn {
+  background: #e50914;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.add-vehicle-btn:hover {
+  background: #c40812;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(229, 9, 20, 0.2);
+}
+
+/* ── Filters Row ── */
+.admin-controls-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding: 0 10px;
+}
+
+.search-bar-admin {
+  width: 320px;
+  position: relative;
+}
+
+.search-bar-admin input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 12px 20px 12px 45px;
+  border-radius: 14px;
+  color: white;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.search-icon-small {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search-bar-admin input:focus {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(229, 9, 20, 0.5);
+  outline: none;
+}
+
+.spacer { flex: 1; }
+
+.filter-group-admin {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.filter-group-admin label {
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.glassy-select-wrapper {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  padding: 2px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.glassy-select-wrapper:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Filter AdminSelect width in top bar */
+.filter-admin-select {
+  min-width: 160px;
+}
+
+.glassy-select {
+  background: transparent;
+  border: none;
+  padding: 10px 18px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.glassy-select option {
+  background: #1a1e26; /* Dark background for options to match glassy theme */
+  color: white;
+  padding: 10px;
+}
+
+/* Fleet Grid */
+.fleet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.vehicle-card-admin {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.vehicle-card-admin:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(229, 9, 20, 0.2);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+}
+
+.card-image-section {
+  position: relative;
+  height: 220px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.vehicle-card-admin:hover .card-image-section img {
+  transform: scale(1.05);
+}
+
+.card-quick-actions {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.3s;
+  transform: translateY(-5px);
+}
+
+.vehicle-card-admin:hover .card-quick-actions {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mini-action-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.95rem;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.mini-action-btn.edit:hover { background: #3b82f6; }
+.mini-action-btn.delete:hover { background: #e50914; }
+
+.status-tag {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  backdrop-filter: blur(10px);
+}
+
+.status-tag.available { background: rgba(16, 185, 129, 0.15); color: #10b981; }
+.status-tag.rented { background: rgba(59, 130, 246, 0.15); color: #3b82f6; }
+.status-tag.maintenance { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+.status-tag.retired { background: rgba(239, 68, 68, 0.15); color: #ef4444; }
+
+.card-details-section {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.vehicle-main-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.vehicle-main-info h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.plate-pill {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.1);
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(251, 191, 36, 0.2);
+}
+
+.vehicle-sub-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.dot { opacity: 0.4; }
+
+/* Modal Styling Refined */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(15px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.modal-box-car, .modal-box-book{
+  background: #1e2430;
+  width: 100%;
+  max-width: 1000px;
+  max-height: 90vh; /* Fix: Constrain height for scrolling */
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  animation: modalScale 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes modalScale {
+  from { opacity: 0; transform: scale(0.9) translateY(20px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.modal-head {
+  padding: 1.5rem 2.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  flex-shrink: 0;
+}
+
+.modal-title-group {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  background: rgba(229, 9, 20, 0.1);
+  color: #e50914;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.modal-title-group h2 {
+  font-size: 1.4rem;
+  margin: 0;
+  color: white;
+}
+
+.modal-title-group p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.close-btn-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.close-btn-circle:hover {
+  background: rgba(229, 9, 20, 0.2);
+  color: #e50914;
+}
+
+.car-registration-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.form-layout-main {
+  flex: 1; /* Ensure it fills available space */
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2.5rem;
+  padding: 2.5rem;
+  overflow-y: auto; /* Fix: Enable scrolling within the form body */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+}
+
+.form-layout-main::-webkit-scrollbar {
+  width: 6px;
+}
+
+.form-layout-main::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.section-subtitle {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #e50914;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-subtitle::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(229, 9, 20, 0.2), transparent);
+}
+
+.input-group-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem; /* Increased gap from 1.2rem to 2rem */
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.input-field label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.clean-input {
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding: 12px 16px !important;
+  border-radius: 12px !important;
+  color: white !important;
+  font-size: 0.95rem !important;
+  transition: all 0.3s !important;
+  width: 100%;
+  box-sizing: border-box;
+  appearance: none; /* Premium look */
+}
+
+/* Distinct style for inputs */
+input.clean-input, textarea.clean-input {
+  background: rgba(0, 0, 0, 0.25) !important;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Distinct style for selects */
+select.clean-input {
+  background-color: rgba(255, 255, 255, 0.03) !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='rgba(255,255,255,0.3)'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 16px;
+  padding-right: 40px !important;
+  cursor: pointer;
+}
+
+.clean-input option {
+  background: #1e2430;
+  color: white;
+  padding: 10px;
+}
+
+.clean-input:focus {
+  border-color: #e50914 !important;
+  background: rgba(229, 9, 20, 0.08) !important;
+  outline: none;
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.1);
+}
+
+.input-with-symbol {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.symbol {
+  position: absolute;
+  left: 15px;
+  color: #10b981;
+  font-weight: 700;
+}
+
+.input-with-symbol .clean-input {
+  padding-left: 35px !important;
+}
+
+.image-upload-wrapper {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 20px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.status-selection-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.status-options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.status-opt-btn {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.status-opt-btn:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+}
+
+.status-opt-btn.active {
+  background: rgba(229, 9, 20, 0.1);
+  border-color: #e50914;
+  color: #e50914;
+}
+
+.feature-toggle-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+  padding: 1.2rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 10px;
+}
+
+.toggle-info strong {
+  display: block;
+  font-size: 0.95rem;
+  color: white;
+  margin-bottom: 2px;
+}
+
+.toggle-info p {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* iOS Toggle Style */
+.ios-toggle {
+  position: relative;
+  width: 50px;
+  height: 26px;
+}
+
+.ios-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .toggle-slider {
+  background-color: #e50914;
+}
+
+input:checked + .toggle-slider:before {
+  transform: translateX(24px);
+}
+
+.modal-footer-glass {
+  padding: 1.5rem 2.5rem;
+  background: rgba(30, 38, 55, 0.8);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  flex-shrink: 0;
+}
+
+.btn-cancel-flat {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.btn-cancel-flat:hover {
+  color: white;
+}
+
+.btn-save-glow {
+  background: #e50914;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 14px;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.2);
+}
+
+.btn-save-glow:hover {
+  background: #ff0b17;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(229, 9, 20, 0.4);
+}
+
+@media (max-width: 900px) {
+  .form-layout-main {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+  
+  .modal-box-car {
+    max-height: 95vh;
+  }
+}
+
+/* ── RTL Support ── */
+[dir="rtl"] .search-bar-admin input {
+  padding: 12px 45px 12px 20px;
+}
+[dir="rtl"] .search-icon-small {
+  left: auto;
+  right: 18px;
+}
+[dir="rtl"] .status-tag {
+  right: auto;
+  left: 15px;
+}
+[dir="rtl"] .card-quick-actions {
+  left: auto;
+  right: 15px;
+}
+[dir="rtl"] .symbol {
+  left: auto;
+  right: 15px;
+}
+[dir="rtl"] .input-with-symbol .clean-input {
+  padding-left: 16px !important;
+  padding-right: 35px !important;
+}
+[dir="rtl"] select.clean-input {
+  background-position: left 15px center;
+  padding-right: 16px !important;
+  padding-left: 40px !important;
+}

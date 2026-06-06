@@ -1,0 +1,1076 @@
+{
+  "navbar": {
+    "cars": "السيارات",
+    "Cars": "السيارات",
+    "about": "من نحن",
+    "contact": "اتصل بنا",
+    "Contact": "اتصل بنا",
+    "myBookings": "حجوزاتي",
+    "profile": "الملف الشخصي",
+    "dashboard": "لوحة التحكم",
+    "hiUser": "أهلاً، {{name}}",
+    "userFallback": "مستخدم",
+    "logout": "تسجيل الخروج",
+    "login": "تسجيل الدخول",
+    "register": "إنشاء حساب"
+  },
+  "languageSwitcher": {
+    "aria": "اختيار اللغة",
+    "en": "English",
+    "fr": "Français",
+    "ar": "العربية"
+  },
+  "hero": {
+    "title": "اعثر على سيارتك المثالية",
+    "bookingNow": "احجز الآن ➞",
+    "viewOnMap": "عرض على الخريطة",
+    "address": "شارع دبلن حي الفيد عراس بني انصار، الناظور"
+  },
+  "filters": {
+    "make": "العلامة",
+    "model": "الموديل",
+    "transmission": "ناقل الحركة",
+    "pricing": "السعر",
+    "checkIn": "تاريخ الاستلام",
+    "checkOut": "تاريخ التسليم",
+    "search": "بحث",
+    "anyMakes": "كل العلامات",
+    "anyModels": "كل الموديلات",
+    "anyTransmission": "كل الأنواع",
+    "pricingAll": "كل الأسعار",
+    "pricingUnder300": "أقل من 300 درهم",
+    "pricing300to600": "300 - 600 درهم",
+    "pricing600plus": "أكثر من 600 درهم"
+  },
+  "home": {
+    "whyTitle": "لماذا",
+    "whyBrand": "M.S Car",
+    "whySubtitle": "انقر على أي بطاقة لمعرفة المزيد عن التزامنا بالتميز.",
+    "clickForDetails": "انقر للتفاصيل",
+    "features": {
+      "trusted": {
+        "title": "خدمة موثوقة",
+        "description": "نوفر تجربة تأجير آمنة وموثوقة. من التحقق من الهوية إلى الدفع الآمن، تمنحك إجراءاتنا الشفافة راحة بال تامة في كل رحلة."
+      },
+      "quality": {
+        "title": "مركبات عالية الجودة",
+        "description": "تخضع أسطولنا المتنوع من السيارات الفاخرة لفحوصات دقيقة وصيانة دورية. نضمن السلامة والراحة والأداء المتميز لجميع احتياجاتك."
+      },
+      "pricing": {
+        "title": "أسعار واضحة",
+        "description": "أسعار مباشرة دون رسوم خفية. نقدم أسعاراً يومية وأسبوعية تنافسية وخيارات مرنة تناسب ميزانيتك وجدولك."
+      },
+      "satisfaction": {
+        "title": "رضا العملاء",
+        "description": "سعادتك أولويتنا. نركز على تجربة سلسة ومخصصة من لحظة الحجز حتى تسليم المفاتيح، ليغادر كل عميل بابتسامة."
+      }
+    }
+  },
+  "auth": {
+    "badgeLogin": "دخول آمن",
+    "badgeRegister": "إنشاء حساب",
+    "headlineLogin1": "اعثر على",
+    "headlineLogin2": "سيارة أحلامك",
+    "headlineRegister1": "انضم إلى نخبة",
+    "headlineRegister2": "القيادة",
+    "infoLogin": "استمتع بالفخامة والأداء. احجز بخطوات بسيطة وانطلق في الطريق اليوم.",
+    "infoRegister": "أنشئ حساباً للاستفادة من المزايا الحصرية، إدارة حجوزاتك، والوصول المبكر إلى أسطولنا المميز.",
+    "welcomeBack": "مرحباً بعودتك!",
+    "signInSubtitle": "سجّل الدخول للمتابعة",
+    "phoneNumber": "رقم الهاتف",
+    "phonePlaceholder": "رقم الهاتف",
+    "password": "كلمة المرور",
+    "rememberMe": "تذكرني",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "signingIn": "جاري تسجيل الدخول...",
+    "signIn": "تسجيل الدخول",
+    "noAccount": "ليس لديك حساب؟",
+    "signUp": "إنشاء حساب",
+    "createAccount": "إنشاء حساب",
+    "registerSubtitle": "انضم إلينا وابدأ رحلتك",
+    "firstName": "الاسم الأول",
+    "lastName": "اسم العائلة",
+    "firstNamePlaceholder": "الاسم الأول",
+    "lastNamePlaceholder": "اسم العائلة",
+    "email": "البريد الإلكتروني",
+    "emailPlaceholder": "البريد الإلكتروني",
+    "cin": "البطاقة الوطنية (CIN)",
+    "cinPlaceholder": "رقم الهوية",
+    "licenseNumber": "رقم رخصة السياقة",
+    "licensePlaceholder": "رقم الرخصة",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "confirmPasswordPlaceholder": "أعد إدخال كلمة المرور",
+    "passwordPlaceholder": "كلمة المرور",
+    "creatingAccount": "جاري إنشاء الحساب...",
+    "signUpSubmit": "تسجيل",
+    "haveAccount": "لديك حساب بالفعل؟",
+    "loginLink": "تسجيل الدخول",
+    "errors": {
+      "loginFailed": "فشل تسجيل الدخول. حاول مرة أخرى.",
+      "registerFailed": "فشل التسجيل. حاول مرة أخرى.",
+      "passwordMismatch": "كلمتا المرور غير متطابقتين"
+    }
+  },
+  "booking": {
+    "loading": "جاري تحميل تفاصيل السيارة...",
+    "notFound": "السيارة غير موجودة",
+    "backToCars": "العودة إلى السيارات",
+    "backToDetails": "العودة إلى تفاصيل السيارة",
+    "title": "احجز رحلتك",
+    "perDay": "/ يوم",
+    "seats": "{{count}} مقاعد",
+    "discountBadge": "خصم {{percent}}% من {{threshold}} أيام فما فوق",
+    "transmissionFallback": "أوتوماتيك",
+    "fuelFallback": "بنزين",
+    "cinLabel": "البطاقة الوطنية (CIN)",
+    "cinPlaceholder": "أدخل رقم CIN",
+    "phoneLabel": "رقم الهاتف",
+    "phonePlaceholder": "مثال: 06...",
+    "selectDates": "اختيار التواريخ",
+    "datesPlaceholder": "انقر لاختيار فترة الإيجار",
+    "pickupLabel": "مكان الاستلام",
+    "pickupPlaceholder": "مثال: المطار، وسط المدينة، المكتب...",
+    "notesLabel": "ملاحظات إضافية (اختياري)",
+    "notesPlaceholder": "أي طلبات أو ملاحظات خاصة...",
+    "priceSummary": "ملخص السعر",
+    "duration": "المدة",
+    "day_one": "يوم واحد",
+    "day_other": "{{count}} أيام",
+    "basePrice": "السعر الأساسي",
+    "discount": "الخصم ({{percent}}%)",
+    "total": "الإجمالي",
+    "processing": "جاري المعالجة...",
+    "proceedSummary": "متابعة إلى الملخص",
+    "alertPickDates": "يرجى اختيار فترة إيجار صالحة بتاريخ بداية ونهاية.",
+    "alertUnavailable": "هذه السيارة غير متوفرة في الفترة المختارة.",
+    "alertCinPhone": "يرجى إدخال رقم CIN والهاتف",
+    "alertInvalidDates": "تواريخ غير صالحة",
+    "successConfirmed": "تم تأكيد الحجز ✅",
+    "successLoyal": "لديك عدة حجوزات معنا! أنشئ حساباً لتتبعها بسهولة.",
+    "successReturning": "مرحباً بعودتك! وجدنا سجل حجوزاتك السابقة.",
+    "summaryTitle": "ملخص الحجز",
+    "summarySubtitle": "راجع اختيارك قبل الدفع.",
+    "vehicle": "المركبة:",
+    "durationLabel": "المدة:",
+    "daysCount_one": "يوم واحد",
+    "daysCount_other": "{{count}} أيام",
+    "datesLabel": "التواريخ:",
+    "dailyRate": "السعر اليومي:",
+    "totalAmount": "المبلغ الإجمالي:",
+    "additionalNotes": "ملاحظات إضافية:",
+    "modify": "تعديل",
+    "confirmPay": "تأكيد والدفع",
+    "paymentHint": "🛡️ دفع آمن عبر محاكاة M.S Pay."
+  },
+  "common": {
+    "perDay": "/ يوم",
+    "perDayShort": "/ يوم",
+    "dhPerDay": "{{price}} درهم / يوم",
+    "retry": "إعادة المحاولة",
+    "reset": "إعادة التعيين",
+    "clear": "مسح",
+    "clearFilters": "مسح الفلاتر",
+    "showAll": "عرض الكل",
+    "bookNow": "احجز الآن",
+    "reserveLater": "احجز لاحقاً",
+    "viewDetails": "عرض التفاصيل",
+    "unavailable": "غير متوفر",
+    "oops": "عذراً!",
+    "loadingFleet": "جاري تحميل الأسطول...",
+    "status": {
+      "available": "متاح",
+      "rented": "مؤجرة",
+      "maintenance": "في الصيانة",
+      "retired": "متوقفة",
+      "unavailable": "غير متوفرة",
+      "expiredDocuments": "وثائق منتهية"
+    }
+  },
+  "footer": {
+    "newsletter": "النشرة الإخبارية",
+    "newsletterSub": "اشترك لكي لا تفوتك أي عرض",
+    "emailPlaceholder": "بريدك الإلكتروني",
+    "subscribed": "✓ تم الاشتراك!",
+    "subscribeBtn": "+ اشترك",
+    "contactInfo": "معلومات الاتصال",
+    "address": "شارع دبلن حي الفيد عراس، بني انصار، الناظور",
+    "pages": "الصفحات",
+    "support": "الدعم",
+    "followUs": "تابعنا",
+    "bookCar": "احجز سيارة",
+    "helpCenter": "مركز المساعدة",
+    "whyUs": "لماذا نحن؟",
+    "ourRates": "أسعارنا",
+    "developedBy": "طوره",
+    "radiTeam": "فريق Radi",
+    "vehicles": "المركبات",
+    "happyClients": "عملاء راضون",
+    "support247": "دعم متواصل",
+    "avgRating": "متوسط التقييم",
+    "copyright": "© {{year}} M.S Car Rental. جميع الحقوق محفوظة.",
+    "locationTag": "بني انصار، الناظور"
+  },
+  "contact": {
+    "brand": "M.S Car Rental",
+    "heading": "اتصل بنا",
+    "desc": "أخبرنا عن رحلتك وسنعود إليك بالسيارة المناسبة وعرض سعر مخصص.",
+    "successTitle": "تم إرسال الرسالة",
+    "successDesc": "سنتواصل معك قريباً.",
+    "fullName": "الاسم الكامل",
+    "namePlaceholder": "أدخل اسمك",
+    "email": "البريد الإلكتروني",
+    "emailPlaceholder": "أدخل بريدك",
+    "phone": "رقم الهاتف",
+    "phonePlaceholder": "أدخل رقم هاتفك",
+    "message": "الرسالة",
+    "messagePlaceholder": "ما السيارة أو الخدمة التي تحتاجها؟",
+    "sendRequest": "إرسال الطلب",
+    "whatsapp": "واتساب",
+    "recentFleet": "اكتشف أسطولنا الأخير",
+    "sendFailed": "فشل الإرسال: {{message}}",
+    "sendError": "حدث خطأ. حاول مرة أخرى لاحقاً."
+  },
+  "aboutUs": {
+    "badge": "من نحن",
+    "title": "اكتشف",
+    "titleAccent": "خدماتنا",
+    "tabs": {
+      "booking": {
+        "title": "حجز سلس",
+        "subtitle": "احجز في ثوانٍ"
+      },
+      "guide": {
+        "title": "دليل الحجز",
+        "subtitle": "خطوات بسيطة"
+      },
+      "management": {
+        "title": "إدارة مرنة",
+        "subtitle": "تحكم في حالتك"
+      },
+      "join": {
+        "title": "انضم إلينا",
+        "subtitle": "أنشئ حسابك"
+      }
+    }
+  },
+  "ourCars": {
+    "title": "سياراتنا",
+    "subtitle": "اكتشف أناقة ورفاهية أسطولنا المصمم لجعل رحلتك استثنائية.",
+    "fetchError": "تعذر تحميل السيارات",
+    "genericError": "حدث خطأ. حاول مرة أخرى لاحقاً.",
+    "emptyTitle": "لا توجد سيارات متاحة",
+    "emptyDesc": "نحدّث أسطولنا حالياً. عد قريباً."
+  },
+  "testimonials": {
+    "badge": "آراء العملاء",
+    "title": "ماذا يقول عملاؤنا",
+    "viewAll": "عرض الكل ➞",
+    "verifiedClient": "عميل موثق",
+    "stats": {
+      "rating": "متوسط التقييم",
+      "clients": "عملاء راضون",
+      "recommend": "ينصحون بنا"
+    }
+  },
+  "carsPage": {
+    "title": "أسطولنا المميز",
+    "subtitle": "اعثر على السيارة المثالية لرحلتك. استخدم الفلاتر أدناه.",
+    "availabilityBanner": "التوفر للفترة",
+    "findingCars": "جاري البحث عن السيارات...",
+    "noCarsTitle": "لم يتم العثور على سيارات",
+    "noCarsDesc": "عدّل الفلاتر لرؤية المزيد من النتائج.",
+    "allCars": "كل السيارات"
+  },
+  "carDetail": {
+    "loading": "جاري تحميل تفاصيل السيارة...",
+    "notFound": "السيارة غير موجودة",
+    "backToCars": "العودة إلى السيارات",
+    "reviewsCount": "({{count}} تقييم)",
+    "defaultDescription": "مزيج مثالي من الراحة والأداء في مركبة محفوظة جيداً وجاهزة لرحلتك القادمة.",
+    "transmission": "ناقل الحركة",
+    "fuelType": "نوع الوقود",
+    "seats": "المقاعد",
+    "bookThisCar": "احجز هذه السيارة",
+    "reserveFuture": "احجز مسبقاً",
+    "retiredUnavailable": "متوقفة / غير متوفرة",
+    "availability": "التوفر",
+    "availabilityDesc": "راجع التقويم أدناه لمعرفة تواريخ التوفر.",
+    "bookedLegend": "التواريخ الحمراء",
+    "bookedLegendSuffix": "محجوزة مسبقاً.",
+    "customerReviews": "تقييمات العملاء",
+    "noReviews": "لا توجد تقييمات بعد. كن أول من يؤجر ويقيّم هذه السيارة!",
+    "deleteReviewConfirm": "حذف هذا التقييم؟",
+    "deleteReviewFailed": "فشل حذف التقييم",
+    "deleteReview": "حذف التقييم"
+  },
+  "carCard": {
+    "auto": "أوتوماتيك",
+    "petrol": "بنزين",
+    "seats": "{{count}} مقاعد"
+  },
+  "aboutPage": {
+    "heroTitle": "عِش حرية الطريق",
+    "heroSubtitle": "في M.S Cars نقدم أكثر من تأجير: تجربة فاخرة مصممة لرحلتك، بأسطول يجمع بين الفخامة والأمان والأداء.",
+    "tagReliability": "موثوقية",
+    "whyTitle": "لماذا M.S Cars",
+    "tagGuide": "دليل",
+    "masterTitle": "أتقن المنصة",
+    "masterHint": "تفاعل مع الخطوات لمعرفة كيفية استخدام الموقع",
+    "stepLabel": "الخطوة {{num}}",
+    "steps": {
+      "account": {
+        "title": "إنشاء حساب",
+        "desc": "سجّل وتحقق من وثائقك للانضمام إلى نادي M.S Car في دقائق."
+      },
+      "explore": {
+        "title": "استكشف وفلتر",
+        "desc": "ابحث عن السيارة المناسبة لمزاجك، من السيارات الرياضية إلى السيارات الفاخرة."
+      },
+      "booking": {
+        "title": "حجز فوري",
+        "desc": "اختر تواريخك وأكد فوراً. بدون أوراق وبدون انتظار."
+      },
+      "drive": {
+        "title": "انطلق واستمتع",
+        "desc": "استلم سيارتك عبر التطبيق أو من الوكالة. الطريق لك."
+      }
+    },
+    "tagExcellence": "تميز",
+    "servicesTitle": "خدماتنا المميزة",
+    "service1": {
+      "title": "تأجير يومي وقصير المدى",
+      "desc": "مثالي للسفر للعمل، عطلة نهاية الأسبوع أو الحاجة اليومية."
+    },
+    "service2": {
+      "title": "إيجار طويل المدى",
+      "desc": "خيارات شهرية مرنة للأفراد والشركات."
+    },
+    "service3": {
+      "title": "نقل المطار",
+      "desc": "تجنب طوابير التاكسي. استلام وتوصيل في المطارات الرئيسية."
+    },
+    "tagQuickStart": "بداية سريعة",
+    "readyToBook": "جاهز للحجز؟",
+    "tagManagement": "إدارة",
+    "modifyCancel": "عدّل أو ألغِ في أي وقت"
+  },
+  "process": {
+    "title": "عملية بسيطة، تجربة سريعة.",
+    "step1Title": "اختر سيارتك",
+    "step1Desc": "اعثر على السيارة المثالية ببضع نقرات",
+    "step2Title": "اتصل بنا",
+    "step2Desc": "فريقنا يساعدك في المعلومات والحجوزات.",
+    "step3Title": "انطلق للقيادة!",
+    "step3Desc": "أكد تفاصيل حجزك واستعد للطريق براحة بال."
+  },
+  "bookingGuide": {
+    "title": "كيفية",
+    "titleAccent": "الحجز",
+    "intro": "احجز سيارتك الفاخرة في 4 خطوات بسيطة.",
+    "step1Title": "اختر السيارة",
+    "step1Desc": "تصفح الأسطول واضغط «احجز الآن».",
+    "step2Title": "اختر التواريخ",
+    "step2Desc": "حدد التواريخ في التقويم. الأحمر = مشغول.",
+    "step3Title": "تأكيد",
+    "step3Desc": "أدخل رقم CIN/جواز السفر. التأكيد عبر واتساب.",
+    "busy": "مشغول",
+    "selected": "محدد",
+    "cta": "ابدأ الحجز ➞"
+  },
+  "statusGuide": {
+    "title": "أدر",
+    "titleAccent": "حجوزاتك",
+    "intro": "ابقَ مسيطراً. عدّل أو ألغِ حجوزاتك بنقرة واحدة.",
+    "step1Title": "لوحة التحكم",
+    "step1Desc": "اذهب إلى «حجوزاتي» لرؤية كل حجوزاتك النشطة والقادمة.",
+    "step2Title": "متابعة فورية",
+    "step2Desc": "تابع الحالة: قيد الانتظار، مؤكد أو قيد التنفيذ.",
+    "step3Title": "تغييرات فورية",
+    "step3Desc": "تريد الإلغاء أو التعديل؟ اضغط تعديل لتحديث التواريخ أو السيارة.",
+    "pending": "قيد الانتظار",
+    "confirmed": "مؤكد",
+    "onRoad": "في الطريق",
+    "cta": "عرض حجوزاتي ➞"
+  },
+  "registrationGuide": {
+    "title": "انضم إلى",
+    "titleAccent": "النادي المميز",
+    "intro": "أنشئ حسابك اليوم للاستفادة من مزايا حصرية وتجربة مبسطة.",
+    "benefit1Title": "حجز سريع",
+    "benefit1Desc": "بياناتك محفوظة بأمان. احجز بـ 2 نقرات في المرة القادمة.",
+    "benefit2Title": "سجل كامل",
+    "benefit2Desc": "اعرض كل حجوزاتك السابقة والقادمة مع الفواتير والحالات.",
+    "benefit3Title": "أسعار الأعضاء",
+    "benefit3Desc": "خصومات وعروض موسمية حصرية لمجتمعنا.",
+    "readyJourney": "جاهز لرحلتك المميزة؟",
+    "cta": "إنشاء حسابي الآن"
+  },
+  "companyValues": {
+    "title": "التزامنا",
+    "titleAccent": "",
+    "intro": "في M.S Car لا نؤجر سيارات فقط؛ نقدم تميزاً وموثوقية وراحة بال.",
+    "value1Title": "أسطول فاخر",
+    "value1Desc": "نختار أفضل المركبات لضمان تجربة فخامة وأداء.",
+    "value2Title": "دعم متميز",
+    "value2Desc": "فريق متاح 24/7 لمساعدة شخصية ورحلة سلسة.",
+    "value3Title": "شفافية تامة",
+    "value3Desc": "لا رسوم خفية. عقود واضحة وأسعار صادقة.",
+    "whyTitle": "لماذا M.S Car؟",
+    "whyDesc": "سمعتنا مبنية على سنوات من خدمة عملاء مميزين. انضم لمئات السائقين الراضين."
+  },
+  "carsCarousel": {
+    "title": "موديلات",
+    "titleAccent": "السيارات"
+  },
+  "myBookings": {
+    "title": "حجوزاتي",
+    "browseCars": "تصفح السيارات",
+    "loading": "جاري تحميل حجوزاتك...",
+    "emptyTitle": "لا توجد حجوزات",
+    "emptyDesc": "لم تحجز بعد. اكتشف مجموعتنا!",
+    "exploreCars": "استكشف السيارات",
+    "cancelConfirm": "هل تريد إلغاء هذا الحجز؟",
+    "invoiceFailed": "فشل تحميل الفاتورة",
+    "thankYouReview": "شكراً على تقييمك!",
+    "startDate": "تاريخ البداية",
+    "endDate": "تاريخ النهاية",
+    "duration": "المدة",
+    "pickup": "مكان الاستلام",
+    "totalAmount": "المبلغ الإجمالي",
+    "day_one": "يوم واحد",
+    "day_other": "{{count}} أيام",
+    "cancel": "إلغاء",
+    "cancelling": "جاري الإلغاء...",
+    "rateExperience": "قيّم التجربة",
+    "downloadInvoice": "تحميل الفاتورة",
+    "status": {
+      "pending": "قيد الانتظار",
+      "confirmed": "مؤكد",
+      "active": "نشط",
+      "completed": "مكتمل",
+      "cancelled": "ملغى",
+      "rejected": "مرفوض"
+    }
+  },
+  "profile": {
+    "title": "ملفي الشخصي",
+    "personalInfo": "المعلومات الشخصية",
+    "fullName": "الاسم الكامل",
+    "email": "البريد الإلكتروني",
+    "phone": "رقم الهاتف",
+    "notProvided": "غير متوفر",
+    "memberSince": "عضو منذ",
+    "licenseSection": "رخصة السياقة والهوية",
+    "licenseHint": "يجب التحقق من رخصتك من قبل فريقنا لتأجير سيارة.",
+    "uploadedOn": "تم الرفع: {{date}}",
+    "uploadNew": "رفع مستند جديد",
+    "selectFile": "يرجى اختيار ملف أولاً.",
+    "uploadSuccess": "تم رفع المستند! في انتظار التحقق.",
+    "uploadError": "خطأ أثناء الرفع.",
+    "uploading": "جاري الرفع...",
+    "uploadLicense": "رفع الرخصة",
+    "formatsHint": "الصيغ: JPG, PNG, PDF (حد أقصى 5 ميجا)",
+    "docStatus": {
+      "pending": "قيد الانتظار",
+      "approved": "موافق عليه",
+      "rejected": "مرفوض"
+    },
+    "changePassword": "تغيير كلمة المرور",
+    "currentPassword": "كلمة المرور الحالية",
+    "enterCurrentPassword": "أدخل كلمة المرور الحالية",
+    "newPassword": "كلمة المرور الجديدة",
+    "enterNewPassword": "أدخل كلمة المرور الجديدة",
+    "confirmNewPassword": "تأكيد كلمة المرور الجديدة",
+    "passwordFieldsRequired": "جميع الحقول مطلوبة",
+    "passwordMismatch": "كلمات المرور الجديدة غير متطابقة",
+    "passwordTooShort": "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
+    "passwordChangeSuccess": "تم تغيير كلمة المرور بنجاح!",
+    "passwordChangeError": "فشل تغيير كلمة المرور. تحقق من كلمة المرور الحالية وحاول مجددا.",
+    "updating": "جاري التحديث..."
+  },
+  "reviewsPage": {
+    "badge": "كل التقييمات",
+    "title": "ماذا يقول عملاؤنا",
+    "subtitle": "تصفح كل التقييمات. انقر على بطاقة لفتح تقييم السيارة إن وُجد.",
+    "loading": "جاري تحميل التقييمات...",
+    "empty": "لا توجد تقييمات بعد.",
+    "anonymous": "عميل مجهول",
+    "stats": {
+      "rating": "متوسط التقييم",
+      "total": "إجمالي التقييمات",
+      "fiveStar": "نسبة 5 نجوم"
+    }
+  },
+  "reviewModal": {
+    "title": "قيّم تجربتك",
+    "question": "كيف كانت تجربة تأجير {{brand}} {{model}}؟",
+    "yourRating": "تقييمك",
+    "shareThoughts": "شارك رأيك",
+    "placeholder": "السيارة نظيفة، أداء ممتاز...",
+    "submitting": "جاري الإرسال...",
+    "submit": "إرسال التقييم",
+    "submitFailed": "فشل إرسال التقييم"
+  },
+  "bookingCalendar": {
+    "selectDates": "اختيار التواريخ",
+    "loading": "جاري تحميل المواعيد المتاحة...",
+    "loadFailed": "تعذر تحميل التوفر.",
+    "blocked": "المركبة غير متوفرة حالياً: {{reasons}}",
+    "overlapError": "هذه السيارة غير متاحة في هذه الفترة. اختر تواريخاً أخرى."
+  },
+  "notifications": {
+    "title": "الإشعارات",
+    "markAllRead": "تعليم الكل كمقروء",
+    "empty": "لا توجد إشعارات",
+    "markRead": "تعليم كمقروء",
+    "defaultTitle": "إشعار",
+    "bookingUpdate": "تحديث الحجز",
+    "bookingCancelled": "حجز ملغى",
+    "newBookingRequest": "طلب حجز جديد",
+    "maintenanceAlert": "تنبيه صيانة",
+    "statusUpdated": "تم تحديث حالة حجزك إلى {{status}}."
+  },
+  "admin": {
+    "dashboard": {
+      "loading": "جاري التحميل",
+      "bookingPipeline": {
+        "pending": "قيد الانتظار",
+        "pendingNote": "حجوزات معلقة",
+        "active": "نشط",
+        "activeNote": "حجوزات نشطة حالياً",
+        "completed": "مكتمل",
+        "completedNote": "حجوزات مكتملة"
+      },
+      "statCards": {
+        "fleet": "الأسطول",
+        "availableNow": "متاح الآن",
+        "utilized": "مُستخدم",
+        "reservations": "الحجوزات",
+        "confirmedBookings": "حجوزات مؤكدة",
+        "activeRightNow": "نشط الآن",
+        "customers": "العملاء",
+        "repeatRate": "معدل التكرار",
+        "activeLast30Days": "نشط آخر 30 يوم",
+        "revenue": "الإيرادات",
+        "last30Days": "آخر 30 يوم",
+        "completedBookings": "حجوزات مكتملة"
+      },
+      "title": "لوحة القيادة",
+      "subtitle": "نظرة عامة على النشاط",
+      "last30Days": "آخر 30 يوم",
+      "buttons": {
+        "export": "تصدير"
+      },
+      "alerts": {
+        "vehicles": "مركبات",
+        "expiredDocs": "وثائق منتهية",
+        "manageNow": "إدارة الآن",
+        "expiringWithin7": "تنتهي خلال 7 أيام",
+        "reviewFleet": "مراجعة الأسطول"
+      },
+      "revenueCard": {
+        "title": "الإيرادات",
+        "totalProfit": "إجمالي الأرباح",
+        "completedRevenue": "إيرادات مكتملة",
+        "last30Days": "آخر 30 يوم",
+        "revenue": "إيرادات"
+      },
+      "bookingCard": {
+        "title": "الحجوزات",
+        "pipeline": "التدفق"
+      },
+      "productsCard": {
+        "title": "المنتجات",
+        "topSellingProducts": "المنتجات الأكثر مبيعاً",
+        "car": "سيارة",
+        "plate": "لوحة",
+        "bookings": "الحجوزات",
+        "revenue": "الإيرادات",
+        "ratePerDay": "السعر اليومي",
+        "noData": "لا توجد بيانات"
+      },
+      "activityCard": {
+        "title": "النشاط",
+        "mostActiveDay": "اليوم الأكثر نشاطاً",
+        "bookingsCreated": "الحجوزات المُنشأة",
+        "bookings": "حجوزات"
+      },
+      "loyaltyCard": {
+        "title": "الولاء",
+        "repeatRate": "معدل العودة",
+        "of": "من",
+        "customersBookedMore": "العملاء حجزوا أكثر من مرة"
+      },
+      "fleetCard": {
+        "inMaintenance": "في الصيانة",
+        "fleetUtilization": "استخدام الأسطول",
+        "documentsExpiring": "وثائق تقترب من الانتهاء",
+        "cancelledBookings": "حجوزات ملغاة"
+      }
+    },
+    "paymentStatus": {
+      "unpaid": "غير مدفوع",
+      "partial": "جزئي",
+      "paid": "مدفوع"
+    },
+    "manageBookings": {
+      "filterAll": "عرض الكل",
+      "alerts": {
+        "downloadInvoiceFailed": "فشل تنزيل الفاتورة"
+      },
+      "title": "إدارة الحجوزات",
+      "subtitle": "إدارة جميع الحجوزات",
+      "searchPlaceholder": "بحث...",
+      "filterLabel": "تصفية",
+      "buttons": {
+        "directEntry": "إدخال مباشر"
+      },
+      "tableHeaders": {
+        "customer": "العميل",
+        "vehicle": "المركبة",
+        "dates": "التواريخ",
+        "total": "الإجمالي",
+        "status": "الحالة",
+        "actions": "إجراءات"
+      },
+      "guestClient": "عميل زائر",
+      "noEmail": "لا يوجد بريد إلكتروني",
+      "downloadInvoiceTitle": "تنزيل الفاتورة",
+      "emptyState": "لا توجد بيانات",
+      "modal": {
+        "fields": {
+          "status": "الحالة",
+          "manualDiscount": "خصم يدوي",
+          "paymentStatus": "حالة الدفع",
+          "notes": "ملاحظات"
+        },
+        "hint": {
+          "manualDiscount": "خصم يدوي"
+        },
+        "buttons": {
+          "confirmChanges": "تأكيد التغييرات"
+        }
+      }
+    },
+    "common": {
+      "cancel": "إلغاء"
+    },
+    "manageCarDocuments": {
+      "alerts": {
+        "selectRequiredFields": "يرجى تحديد الحقول المطلوبة",
+        "submitFailed": "فشل الإرسال",
+        "updateStatusFailed": "فشل تحديث الحالة"
+      },
+      "status": {
+        "expired": "منتهي",
+        "expiringSoon": "ينتهي قريباً",
+        "valid": "صالح"
+      },
+      "title": "وثائق السيارات",
+      "subtitle": "إدارة الوثائق",
+      "buttons": {
+        "uploadDocument": "رفع وثيقة"
+      },
+      "filters": {
+        "filterByCar": "تصفية حسب السيارة",
+        "allVehicles": "جميع المركبات"
+      },
+      "searchPlaceholder": "بحث...",
+      "tableHeaders": {
+        "vehicle": "المركبة",
+        "documentType": "نوع الوثيقة",
+        "period": "الفترة",
+        "status": "الحالة",
+        "actions": "إجراءات"
+      },
+      "viewDocument": "عرض الوثيقة",
+      "actions": {
+        "delete": "حذف"
+      },
+      "modal": {
+        "title": "إضافة وثيقة",
+        "description": "تفاصيل الوثيقة",
+        "selectVehicle": "اختر مركبة",
+        "selectVehiclePlaceholder": "اختر...",
+        "documentType": "نوع الوثيقة",
+        "startDate": "تاريخ البدء",
+        "endDate": "تاريخ الانتهاء",
+        "uploadDocument": "رفع",
+        "notesOptional": "ملاحظات (اختياري)",
+        "blockAvailabilityTitle": "حظر التوفر",
+        "blockAvailabilityDescription": "منع حجز هذه المركبة",
+        "submitButton": "حفظ"
+      },
+      "documentType": {
+        "insurance": "تأمين",
+        "technical_control": "فحص تقني",
+        "vignette": "ضريبة سنوية",
+        "carte_grise": "البطاقة الرمادية"
+      }
+    },
+    "manageCars": {
+      "alerts": {
+        "failedLoadCars": "فشل تحميل السيارات",
+        "noImagesConfirm": "تأكيد بدون صور",
+        "operationFailed": "فشلت العملية",
+        "errorSavingCar": "خطأ في الحفظ",
+        "deleteConfirm": "تأكيد الحذف",
+        "errorDeletingCar": "خطأ في الحذف"
+      },
+      "loading": "جاري التحميل...",
+      "title": "إدارة السيارات",
+      "subtitle": "إدارة أسطولك",
+      "buttons": {
+        "addVehicle": "إضافة مركبة"
+      },
+      "searchPlaceholder": "بحث...",
+      "filters": {
+        "status": "الحالة",
+        "allFleet": "كل الأسطول"
+      },
+      "modal": {
+        "titleEdit": "تعديل سيارة",
+        "titleNew": "سيارة جديدة",
+        "subtitleEdit": "تحديث المعلومات",
+        "subtitleNew": "إضافة للأسطول",
+        "fields": {
+          "brand": "العلامة",
+          "model": "الموديل",
+          "year": "السنة",
+          "licensePlate": "رقم اللوحة",
+          "dailyPrice": "السعر اليومي",
+          "mileage": "المسافة المقطوعة",
+          "transmission": "ناقل الحركة",
+          "fuelType": "نوع الوقود",
+          "availabilityStatus": "حالة التوفر"
+        },
+        "placeholders": {
+          "brand": "العلامة التجارية",
+          "model": "الموديل",
+          "licensePlate": "رقم اللوحة"
+        },
+        "options": {
+          "automatic": "أوتوماتيك",
+          "manual": "عادي",
+          "gasoline": "بنزين",
+          "diesel": "ديزل",
+          "electric": "كهربائي",
+          "hybrid": "هجين"
+        },
+        "features": {
+          "promoteFeatured": {
+            "title": "تمييز كإعلان",
+            "description": "عرض في الصفحة الرئيسية"
+          },
+          "blockIfVignetteExpired": {
+            "title": "حظر إذا انتهت الضريبة",
+            "description": "منع حجز السيارة"
+          }
+        },
+        "buttons": {
+          "updateVehicle": "تحديث",
+          "saveVehicle": "حفظ"
+        }
+      }
+    },
+    "bookingModal": {
+      "title": "إنشاء حجز",
+      "subtitle": "احجز سيارة لعميلك",
+      "guestTab": "ضيف",
+      "accountTab": "حساب",
+      "guestSectionTitle": "معلومات الضيف",
+      "accountSectionTitle": "اختر حساب العميل",
+      "labels": {
+        "fullName": "الاسم الكامل",
+        "cin": "رقم البطاقة",
+        "phone": "الهاتف",
+        "emailOptional": "البريد الإلكتروني (اختياري)",
+        "search": "بحث",
+        "selectCustomer": "اختر العميل",
+        "vehicle": "المركبة",
+        "selectDates": "اختر التواريخ",
+        "pickupLocation": "مكان الاستلام",
+        "discount": "الخصم (%)",
+        "notes": "ملاحظات"
+      },
+      "placeholders": {
+        "fullName": "أدخل الاسم الكامل",
+        "cin": "أدخل رقم البطاقة",
+        "phone": "أدخل رقم الهاتف",
+        "email": "أدخل البريد الإلكتروني",
+        "search": "ابحث عن العملاء...",
+        "vehicle": "اختر مركبة",
+        "selectDates": "اختر مواعيد الإيجار",
+        "pickupLocation": "أدخل مكان الاستلام",
+        "notes": "ملاحظات إضافية..."
+      },
+      "noCustomersFound": "لم يتم العثور على عملاء",
+      "errors": {
+        "guestFieldsRequired": "يرجى تعبئة جميع حقول الضيف",
+        "selectCustomerAccount": "يرجى اختيار حساب العميل",
+        "fillRequiredFields": "يرجى تعبئة جميع الحقول المطلوبة",
+        "selectVehicleFirst": "يرجى اختيار مركبة أولاً",
+        "creationFailed": "فشل إنشاء الحجز"
+      },
+      "preview": {
+        "basePrice": "السعر الأساسي",
+        "discount": "الخصم المطبّق: {{percent}}%",
+        "total": "الإجمالي"
+      },
+      "buttons": {
+        "processing": "جاري المعالجة...",
+        "createBooking": "إنشاء الحجز"
+      }
+    },
+    "status": {
+      "available": "متاح",
+      "rented": "مؤجر",
+      "maintenance": "صيانة",
+      "retired": "متقاعد"
+    },
+    "manageClients": {
+      "errors": {
+        "isRequired": "مطلوب",
+        "invalidCin": "بطاقة هوية غير صالحة",
+        "lookupFailed": "فشل البحث"
+      },
+      "title": "العملاء",
+      "subtitle": "إدارة العملاء",
+      "labels": {
+        "cin": "رقم البطاقة الوطنية",
+        "phone": "الهاتف"
+      },
+      "placeholders": {
+        "cin": "رقم البطاقة الوطنية",
+        "phone": "الهاتف"
+      },
+      "buttons": {
+        "searchLoading": "جاري البحث...",
+        "search": "بحث"
+      },
+      "search": {
+        "loading": "تحميل...",
+        "noResults": "لا توجد نتائج",
+        "resultLabel": "النتيجة",
+        "resultNote": "تفاصيل العميل"
+      },
+      "list": {
+        "title": "قائمة العملاء",
+        "subtitle": "كل العملاء",
+        "count": "العدد الإجمالي"
+      },
+      "table": {
+        "client": "العميل",
+        "cin": "البطاقة الوطنية",
+        "phone": "الهاتف",
+        "linked": "مرتبط",
+        "email": "البريد الإلكتروني",
+        "bookings": "الحجوزات",
+        "latest": "الأحدث"
+      },
+      "status": {
+        "loadingClients": "تحميل...",
+        "noClientRows": "لا يوجد عملاء"
+      },
+      "profile": {
+        "cin": "البطاقة الوطنية",
+        "linkedAccount": "حساب مرتبط",
+        "email": "البريد الإلكتروني",
+        "phonesUsed": "الهواتف المستخدمة"
+      },
+      "history": {
+        "title": "السجل",
+        "subtitle": "حجوزات سابقة"
+      },
+      "filters": {
+        "status": "الحالة",
+        "car": "السيارة",
+        "from": "من",
+        "to": "إلى"
+      },
+      "bookingsTable": {
+        "car": "السيارة",
+        "startDate": "تاريخ البدء",
+        "endDate": "تاريخ الانتهاء",
+        "status": "الحالة",
+        "payment": "الدفع",
+        "total": "الإجمالي",
+        "phoneUsed": "الهاتف المستخدم",
+        "actions": "إجراءات"
+      }
+    },
+    "manageMaintenance": {
+      "alerts": {
+        "createFailed": "فشل الإنشاء",
+        "statusUpdateFailed": "فشل التحديث"
+      },
+      "title": "الصيانة",
+      "buttons": {
+        "scheduleService": "جدولة صيانة",
+        "schedule": "جدولة"
+      },
+      "tableHeaders": {
+        "car": "السيارة",
+        "serviceType": "نوع الخدمة",
+        "status": "الحالة",
+        "period": "الفترة",
+        "actions": "إجراءات"
+      },
+      "status": {
+        "scheduled": "مُجدول",
+        "inProgress": "قيد التنفيذ",
+        "done": "مكتمل",
+        "cancelled": "ملغى"
+      },
+      "modal": {
+        "title": "صيانة",
+        "subtitle": "التفاصيل",
+        "fields": {
+          "car": "السيارة",
+          "type": "النوع",
+          "startDate": "تاريخ البدء",
+          "endDate": "تاريخ الانتهاء",
+          "description": "الوصف"
+        },
+        "placeholders": {
+          "selectCar": "اختر السيارة"
+        },
+        "options": {
+          "oilChange": "تغيير الزيت",
+          "tireChange": "تغيير الإطارات",
+          "inspection": "فحص",
+          "repair": "إصلاح",
+          "other": "أخرى"
+        }
+      }
+    },
+    "manageMessages": {
+      "confirmDelete": "تأكيد الحذف",
+      "title": "الرسائل",
+      "subtitle": "إدارة الرسائل",
+      "emptyState": "لا توجد رسائل",
+      "noPhone": "لا يوجد هاتف",
+      "buttons": {
+        "delete": "حذف",
+        "reply": "رد",
+        "whatsapp": "واتساب"
+      },
+      "sentOn": "أُرسل في",
+      "placeholder": "الرسالة..."
+    },
+    "manageUsers": {
+      "notSpecified": "غير محدد",
+      "title": "المستخدمين",
+      "subtitle": "إدارة المستخدمين",
+      "tabs": {
+        "all": "الكل",
+        "customers": "عملاء",
+        "employees": "موظفين",
+        "admins": "مشرفين"
+      },
+      "tableHeaders": {
+        "user": "المستخدم",
+        "email": "البريد الإلكتروني",
+        "phone": "الهاتف",
+        "role": "الدور",
+        "status": "الحالة",
+        "discount": "الخصم",
+        "actions": "إجراءات"
+      },
+      "status": {
+        "active": "نشط",
+        "inactive": "غير نشط"
+      },
+      "buttons": {
+        "setDiscount": "تعيين خصم",
+        "viewDetails": "عرض التفاصيل"
+      },
+      "emptyState": "لا يوجد مستخدمين",
+      "discountModal": {
+        "title": "تطبيق الخصم"
+      },
+      "detailsModal": {
+        "title": "التفاصيل",
+        "email": "البريد الإلكتروني",
+        "phone": "الهاتف",
+        "cin": "رقم البطاقة الوطنية",
+        "license": "رخصة القيادة",
+        "memberSince": "عضو منذ",
+        "loyaltyDiscount": "خصم الولاء",
+        "roleLabel": "الدور",
+        "statusLabel": "الحالة",
+        "statusActive": "نشط",
+        "statusInactive": "غير نشط",
+        "saving": "جاري الحفظ...",
+        "save": "حفظ"
+      },
+      "roles": {
+        "customer": "عميل",
+        "employee": "موظف",
+        "admin": "مشرف"
+      }
+    },
+    "verifyDocuments": {
+      "alerts": {
+        "updateFailed": "فشل التحديث"
+      },
+      "title": "التحقق",
+      "subtitle": "الوثائق",
+      "tableHeaders": {
+        "user": "المستخدم",
+        "documentType": "نوع الوثيقة",
+        "status": "الحالة",
+        "uploaded": "تم الرفع",
+        "actions": "إجراءات"
+      },
+      "buttons": {
+        "review": "مراجعة",
+        "approve": "موافقة",
+        "reject": "رفض"
+      },
+      "documentPreviewAlt": "معاينة الوثيقة",
+      "userDetails": "تفاصيل المستخدم",
+      "labels": {
+        "name": "الاسم",
+        "phone": "الهاتف",
+        "verificationNotes": "ملاحظات التحقق"
+      },
+      "noPhone": "لا يوجد هاتف",
+      "placeholders": {
+        "notes": "ملاحظات..."
+      },
+      "documentType": {
+        "driver_license": "رخصة سياقة",
+        "id_card": "بطاقة وطنية",
+        "passport": "جواز سفر",
+        "vehicle_registration": "بطاقة رمادية"
+      },
+      "status": {
+        "pending": "قيد الانتظار",
+        "verified": "تم التحقق",
+        "rejected": "مرفوض"
+      },
+      "reviewTitle": "مراجعة وثيقة: {{name}}"
+    },
+    "sidebar": {
+      "dashboard": "لوحة القيادة",
+      "fleet": "الأسطول",
+      "bookings": "الحجوزات",
+      "clients": "العملاء",
+      "users": "المستخدمين",
+      "maintenance": "الصيانة",
+      "fleetHealth": "صحة الأسطول",
+      "verification": "التحقق",
+      "messages": "الرسائل",
+      "systemOnline": "النظام متصل"
+    },
+    "bookingStatus": {
+      "pending": "قيد الانتظار",
+      "confirmed": "مؤكد",
+      "active": "نشط",
+      "completed": "مكتمل",
+      "cancelled": "ملغى",
+      "rejected": "مرفوض"
+    }
+  }
+}

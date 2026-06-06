@@ -1,0 +1,1076 @@
+{
+  "navbar": {
+    "cars": "Cars",
+    "about": "About Us",
+    "contact": "Contact",
+    "myBookings": "My Bookings",
+    "profile": "Profile",
+    "dashboard": "Dashboard",
+    "hiUser": "Hi, {{name}}",
+    "userFallback": "User",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Register"
+  },
+  "languageSwitcher": {
+    "aria": "Choose language",
+    "en": "English",
+    "fr": "Français",
+    "ar": "العربية"
+  },
+  "hero": {
+    "title": "Find your dream car",
+    "bookingNow": "Booking Now ➞",
+    "viewOnMap": "View on the map",
+    "address": "Rue Dublin quartier el fid aarass bni nsar nador"
+  },
+  "filters": {
+    "make": "Make",
+    "model": "Model",
+    "transmission": "Transmission",
+    "pricing": "Pricing",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "search": "Search",
+    "anyMakes": "Any makes",
+    "anyModels": "Any models",
+    "anyTransmission": "Any transmission",
+    "pricingAll": "All pricing",
+    "pricingUnder300": "Under 300 DH",
+    "pricing300to600": "300 - 600 DH",
+    "pricing600plus": "600+ DH"
+  },
+  "home": {
+    "whyTitle": "Why Choose",
+    "whyBrand": "M.S Car",
+    "whySubtitle": "Click on any card to learn more about our commitment to excellence.",
+    "clickForDetails": "Click for details",
+    "features": {
+      "trusted": {
+        "title": "Trusted Service",
+        "description": "We provide a highly reliable and secure rental experience. From identity verification to secure payments, our transparent process ensures complete peace of mind for every customer on every journey."
+      },
+      "quality": {
+        "title": "Quality Vehicles",
+        "description": "Our diverse fleet of premium vehicles undergoes rigorous multi-point inspections and regular maintenance. We guarantee exceptional safety, unparalleled comfort, and top-tier performance for all your driving needs."
+      },
+      "pricing": {
+        "title": "Transparent Pricing",
+        "description": "Enjoy straightforward, clear pricing with absolutely no hidden fees. We offer highly competitive daily and weekly rates, along with flexible rental options tailored perfectly to your budget and schedule."
+      },
+      "satisfaction": {
+        "title": "Customer Satisfaction",
+        "description": "Your happiness is our ultimate priority. We focus on delivering a seamless, highly personalized, and enjoyable experience from the moment you book until you drop off the keys, ensuring every client leaves with a smile."
+      }
+    }
+  },
+  "auth": {
+    "badgeLogin": "Secure Login",
+    "badgeRegister": "Registration",
+    "headlineLogin1": "Find your",
+    "headlineLogin2": "dream car",
+    "headlineRegister1": "Join the Elite",
+    "headlineRegister2": "Drive",
+    "infoLogin": "Experience the ultimate luxury and performance. Reserve your ride in just a few clicks and hit the road today.",
+    "infoRegister": "Create an account to unlock exclusive benefits, manage your bookings, and get early access to our premium fleet.",
+    "welcomeBack": "Welcome Back!",
+    "signInSubtitle": "Please sign in to continue",
+    "phoneNumber": "Phone Number",
+    "phonePlaceholder": "Phone number",
+    "password": "Password",
+    "rememberMe": "Remember Me",
+    "forgotPassword": "Forgot Password?",
+    "signingIn": "Signing In...",
+    "signIn": "Sign In",
+    "noAccount": "Don't have an account?",
+    "signUp": "Sign Up",
+    "createAccount": "Create Account",
+    "registerSubtitle": "Join us to start your journey",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "firstNamePlaceholder": "First name",
+    "lastNamePlaceholder": "Last name",
+    "email": "Email Address",
+    "emailPlaceholder": "Email address",
+    "cin": "CIN",
+    "cinPlaceholder": "Identity number",
+    "licenseNumber": "License Number",
+    "licensePlaceholder": "License number",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Confirm password",
+    "passwordPlaceholder": "Password",
+    "creatingAccount": "Creating Account...",
+    "signUpSubmit": "Sign Up",
+    "haveAccount": "Already have an account?",
+    "loginLink": "Login",
+    "errors": {
+      "loginFailed": "Login failed. Please try again.",
+      "registerFailed": "Registration failed. Please try again.",
+      "passwordMismatch": "Passwords do not match"
+    }
+  },
+  "booking": {
+    "loading": "Loading car details...",
+    "notFound": "Car not found",
+    "backToCars": "Back to Cars",
+    "backToDetails": "Back to Car Details",
+    "title": "Book Your Ride",
+    "perDay": "/ day",
+    "seats": "{{count}} seats",
+    "discountBadge": "{{percent}}% off for {{threshold}}+ days",
+    "transmissionFallback": "Automatic",
+    "fuelFallback": "Gasoline",
+    "cinLabel": "CIN (Identity)",
+    "cinPlaceholder": "Enter your CIN",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "e.g. 06...",
+    "selectDates": "Select Dates",
+    "datesPlaceholder": "Click to select rental dates",
+    "pickupLabel": "Pick-up Location",
+    "pickupPlaceholder": "e.g. Airport, City Center, Office...",
+    "notesLabel": "Additional Notes (optional)",
+    "notesPlaceholder": "Any special requests or requirements...",
+    "priceSummary": "Price Summary",
+    "duration": "Duration",
+    "day_one": "{{count}} day",
+    "day_other": "{{count}} days",
+    "basePrice": "Base Price",
+    "discount": "Discount ({{percent}}%)",
+    "total": "Total",
+    "processing": "Processing...",
+    "proceedSummary": "Proceed to Summary",
+    "alertPickDates": "Please choose a valid rental period with start and end dates.",
+    "alertUnavailable": "This car is not available for the selected period.",
+    "alertCinPhone": "Please enter your CIN and Phone Number",
+    "alertInvalidDates": "Invalid dates selected",
+    "successConfirmed": "Booking Confirmed ✅",
+    "successLoyal": "You have multiple bookings with us! Create an account to track them easily.",
+    "successReturning": "Welcome back! We found your previous booking history.",
+    "summaryTitle": "Booking Summary",
+    "summarySubtitle": "Review your selection before payment.",
+    "vehicle": "Vehicle:",
+    "durationLabel": "Duration:",
+    "daysCount_one": "{{count}} Day",
+    "daysCount_other": "{{count}} Days",
+    "datesLabel": "Dates:",
+    "dailyRate": "Daily Rate:",
+    "totalAmount": "Total Amount:",
+    "additionalNotes": "Additional Notes:",
+    "modify": "Modify",
+    "confirmPay": "Confirm & Pay",
+    "paymentHint": "🛡️ Secure payment powered by M.S Pay simulation."
+  },
+  "common": {
+    "perDay": "/ day",
+    "perDayShort": "/ Day",
+    "dhPerDay": "{{price}} DH / Day",
+    "retry": "Retry",
+    "reset": "Reset",
+    "clear": "Clear",
+    "clearFilters": "Clear Filters",
+    "showAll": "Show All",
+    "bookNow": "Book Now",
+    "reserveLater": "Reserve Later",
+    "viewDetails": "View Details",
+    "unavailable": "Unavailable",
+    "oops": "Oops!",
+    "loadingFleet": "Loading premium fleet...",
+    "loading": "Loading...",
+    "status": {
+      "available": "Available",
+      "rented": "Rented",
+      "maintenance": "In Maintenance",
+      "retired": "Retired",
+      "unavailable": "Unavailable",
+      "expiredDocuments": "Expired Documents"
+    }
+  },
+  "footer": {
+    "newsletter": "NEWSLETTER",
+    "newsletterSub": "Subscribe so you never miss an offer",
+    "emailPlaceholder": "Your email address",
+    "subscribed": "✓ Subscribed!",
+    "subscribeBtn": "+ Subscribe",
+    "contactInfo": "Contact Info",
+    "address": "Rue Dublin quartier el fid aarass, Bni Nsar, Nador",
+    "pages": "Pages",
+    "support": "Support",
+    "followUs": "Follow us",
+    "bookCar": "Book a car",
+    "helpCenter": "Help center",
+    "whyUs": "Why choose us",
+    "ourRates": "Our rates",
+    "developedBy": "Developed by",
+    "radiTeam": "Radi Team",
+    "vehicles": "Vehicles",
+    "happyClients": "Happy clients",
+    "support247": "Support available",
+    "avgRating": "Average rating",
+    "copyright": "© {{year}} M.S Car Rental. All rights reserved.",
+    "locationTag": "Bni Nsar, Nador"
+  },
+  "contact": {
+    "brand": "M.S Car Rental",
+    "heading": "Contact Us",
+    "desc": "Tell us about your trip and we'll get back to you with the right car and a custom quote.",
+    "successTitle": "Message Sent",
+    "successDesc": "We'll get back to you shortly.",
+    "fullName": "Full Name",
+    "namePlaceholder": "Enter your name",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "phone": "Phone Number",
+    "phonePlaceholder": "Enter your phone",
+    "message": "Message",
+    "messagePlaceholder": "Tell us what car or service you need",
+    "sendRequest": "Send Request",
+    "whatsapp": "WhatsApp",
+    "recentFleet": "Discover Our Recent Fleet",
+    "sendFailed": "Failed to send message: {{message}}",
+    "sendError": "An error occurred. Please try again later."
+  },
+  "aboutUs": {
+    "badge": "About Us",
+    "title": "Discover Our",
+    "titleAccent": "Services",
+    "tabs": {
+      "booking": {
+        "title": "Seamless booking",
+        "subtitle": "Reserve in seconds"
+      },
+      "guide": {
+        "title": "Booking Guide",
+        "subtitle": "Easy walkthrough"
+      },
+      "management": {
+        "title": "Flexible Management",
+        "subtitle": "Control your status"
+      },
+      "join": {
+        "title": "Join Us",
+        "subtitle": "Create your account"
+      }
+    }
+  },
+  "ourCars": {
+    "title": "Our Cars",
+    "subtitle": "Discover the unmatched elegance and prestige of our fleet – crafted to make your journey extraordinary.",
+    "fetchError": "Failed to fetch cars",
+    "genericError": "Something went wrong. Please try again later.",
+    "emptyTitle": "No Cars Available",
+    "emptyDesc": "We are currently updating our fleet. Please check back soon."
+  },
+  "testimonials": {
+    "badge": "TESTIMONIALS",
+    "title": "What our clients say",
+    "viewAll": "View all ➞",
+    "verifiedClient": "Verified Client",
+    "stats": {
+      "rating": "AVERAGE RATING",
+      "clients": "SATISFIED CLIENTS",
+      "recommend": "RECOMMEND US"
+    }
+  },
+  "carsPage": {
+    "title": "Our Elite Fleet",
+    "subtitle": "Find the perfect vehicle for your premium journey. Use the filters below to narrow your search.",
+    "availabilityBanner": "Showing availability for",
+    "findingCars": "Finding the perfect cars...",
+    "noCarsTitle": "No Cars Found",
+    "noCarsDesc": "Try adjusting your filters to see more results.",
+    "allCars": "All Cars"
+  },
+  "carDetail": {
+    "loading": "Loading car details...",
+    "notFound": "Car not found",
+    "backToCars": "Back to Cars",
+    "reviewsCount": "({{count}} reviews)",
+    "defaultDescription": "Experience the perfect blend of comfort and performance with this exceptional vehicle, well-maintained and ready for your next journey.",
+    "transmission": "Transmission",
+    "fuelType": "Fuel Type",
+    "seats": "Seats",
+    "bookThisCar": "Book This Car",
+    "reserveFuture": "Reserve Future",
+    "retiredUnavailable": "Retired / Unavailable",
+    "availability": "Availability",
+    "availabilityDesc": "Check the calendar below to see when this car is available.",
+    "bookedLegend": "Red dates",
+    "bookedLegendSuffix": "are already booked.",
+    "customerReviews": "Customer Reviews",
+    "noReviews": "No reviews yet. Be the first to rent and rate this car!",
+    "deleteReviewConfirm": "Delete this review?",
+    "deleteReviewFailed": "Failed to delete review",
+    "deleteReview": "Delete review"
+  },
+  "carCard": {
+    "auto": "Auto",
+    "petrol": "Petrol",
+    "seats": "{{count}} Seats"
+  },
+  "aboutPage": {
+    "heroTitle": "Experience the Freedom of the Road",
+    "heroSubtitle": "At M.S Cars, we provide more than just a rental. We offer a premium experience tailored to your journey, with a fleet that combines luxury, safety, and performance.",
+    "tagReliability": "Reliability",
+    "whyTitle": "Why Choose M.S Cars",
+    "tagGuide": "Guide",
+    "masterTitle": "Master the Platform",
+    "masterHint": "Interact with the steps to see how to use our website",
+    "stepLabel": "Step {{num}}",
+    "steps": {
+      "account": {
+        "title": "Create Account",
+        "desc": "Sign up and verify your documents to join the M.S Car elite club. It only takes a few minutes."
+      },
+      "explore": {
+        "title": "Explore & Filter",
+        "desc": "Use our advanced search to find the car that matches your mood, from sporty convertibles to executive sedans."
+      },
+      "booking": {
+        "title": "Instant Booking",
+        "desc": "Select your dates and confirm instantly. No paperwork, no waiting in line."
+      },
+      "drive": {
+        "title": "Drive & Enjoy",
+        "desc": "Unlock your car via the app or pick up keys at our hubs. The road is yours."
+      }
+    },
+    "tagExcellence": "Excellence",
+    "servicesTitle": "Our Premium Services",
+    "service1": {
+      "title": "Short-Term & Daily Rentals",
+      "desc": "Perfect for business trips, weekend getaways, or when you just need a reliable ride for the day."
+    },
+    "service2": {
+      "title": "Long-Term Leases",
+      "desc": "Flexible monthly options for individuals and corporate clients who require long-term mobility solutions."
+    },
+    "service3": {
+      "title": "Airport Transfers",
+      "desc": "Skip the taxi lines. We provide seamless pickup and drop-off services at all major airports."
+    },
+    "tagQuickStart": "Quick Start",
+    "readyToBook": "Ready to Book?",
+    "tagManagement": "Management",
+    "modifyCancel": "Modify or Cancel Anytime"
+  },
+  "process": {
+    "title": "A simple process, a fast experience.",
+    "step1Title": "Choose your car",
+    "step1Desc": "Discover the ideal car for your trip in just a few clicks",
+    "step2Title": "Contact us",
+    "step2Desc": "Contact our dedicated operator for easy information and bookings.",
+    "step3Title": "Let's go driving!",
+    "step3Desc": "Confirm your booking details and get ready to hit the road with peace of mind."
+  },
+  "bookingGuide": {
+    "title": "How to",
+    "titleAccent": "Book",
+    "intro": "Reserve your premium ride in 4 simple steps.",
+    "step1Title": "Select Car",
+    "step1Desc": "Browse Fleet and click \"Book Now\".",
+    "step2Title": "Pick Dates",
+    "step2Desc": "Select dates on the calendar. Red = Busy.",
+    "step3Title": "Confirm",
+    "step3Desc": "Enter CIN/Passport. We confirm via WhatsApp.",
+    "busy": "Busy",
+    "selected": "Selected",
+    "cta": "Start Booking ➞"
+  },
+  "statusGuide": {
+    "title": "Manage Your",
+    "titleAccent": "Status",
+    "intro": "Stay in control of your journey. Update or cancel your bookings with a single click.",
+    "step1Title": "Access Dashboard",
+    "step1Desc": "Go to \"My Bookings\" in your profile to see all your active and upcoming rentals.",
+    "step2Title": "Real-time Tracking",
+    "step2Desc": "Monitor your booking status: Pending, Confirmed, or In Progress.",
+    "step3Title": "Instant Changes",
+    "step3Desc": "Need to cancel or modify? Click Modify to update your dates or car choice instantly.",
+    "pending": "Pending",
+    "confirmed": "Confirmed",
+    "onRoad": "On Road",
+    "cta": "View My Bookings ➞"
+  },
+  "registrationGuide": {
+    "title": "Join the",
+    "titleAccent": "Premium Club",
+    "intro": "Create your account today to unlock exclusive benefits and streamline your rental experience.",
+    "benefit1Title": "Fast & Easy Booking",
+    "benefit1Desc": "Your details are saved safely. Reserve any car in just 2 clicks next time.",
+    "benefit2Title": "Full Rental History",
+    "benefit2Desc": "View all your past and upcoming bookings with detailed invoices and statuses.",
+    "benefit3Title": "Exclusive Member Rates",
+    "benefit3Desc": "Unlock special discounts and seasonal offers available only for our registered community.",
+    "readyJourney": "Ready to start your premium journey?",
+    "cta": "Create My Account Now"
+  },
+  "companyValues": {
+    "title": "Our",
+    "titleAccent": "Commitment",
+    "intro": "At M.S Car, we don't just rent vehicles; we deliver excellence, reliability, and peace of mind.",
+    "value1Title": "Premium Fleet",
+    "value1Desc": "We curate only the most prestigious vehicles, ensuring every drive is an experience of luxury and performance.",
+    "value2Title": "Unmatched Support",
+    "value2Desc": "Our dedicated team is available 24/7 to provide personalized assistance and ensure your journey is seamless.",
+    "value3Title": "Absolute Transparency",
+    "value3Desc": "No hidden costs, no surprises. Clear contracts and honest pricing are the foundation of our client relationships.",
+    "whyTitle": "Why Choose M.S Car?",
+    "whyDesc": "Our reputation is built on years of serving elite clients with discretion and professionalism. Join the hundreds of satisfied drivers who trust us for their most important journeys."
+  },
+  "carsCarousel": {
+    "title": "Cars",
+    "titleAccent": "Models"
+  },
+  "myBookings": {
+    "title": "My Bookings",
+    "browseCars": "Browse Cars",
+    "loading": "Loading your bookings...",
+    "emptyTitle": "No Bookings Yet",
+    "emptyDesc": "You haven't booked any cars yet. Start exploring our collection!",
+    "exploreCars": "Explore Cars",
+    "cancelConfirm": "Are you sure you want to cancel this booking?",
+    "invoiceFailed": "Failed to download invoice",
+    "thankYouReview": "Thank you for your review!",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "duration": "Duration",
+    "pickup": "Pick-up",
+    "totalAmount": "Total Amount",
+    "day_one": "{{count}} day",
+    "day_other": "{{count}} days",
+    "cancel": "Cancel",
+    "cancelling": "Cancelling...",
+    "rateExperience": "Rate Experience",
+    "downloadInvoice": "Download Invoice",
+    "status": {
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "active": "Active",
+      "completed": "Completed",
+      "cancelled": "Cancelled",
+      "rejected": "Rejected"
+    }
+  },
+  "profile": {
+    "title": "My Profile",
+    "personalInfo": "Personal Information",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "notProvided": "Not provided",
+    "memberSince": "Member Since",
+    "licenseSection": "Driver's License & ID",
+    "licenseHint": "To rent a car, your driver's license must be verified by our team.",
+    "uploadedOn": "Uploaded: {{date}}",
+    "uploadNew": "Upload New Document",
+    "selectFile": "Please select a file first.",
+    "uploadSuccess": "Document uploaded successfully! It is now pending verification.",
+    "uploadError": "Error uploading document.",
+    "uploading": "Uploading...",
+    "uploadLicense": "Upload License",
+    "formatsHint": "Accepted formats: JPG, PNG, PDF (Max 5MB)",
+    "docStatus": {
+      "pending": "pending",
+      "approved": "approved",
+      "rejected": "rejected"
+    },
+    "changePassword": "Change Password",
+    "currentPassword": "Current Password",
+    "enterCurrentPassword": "Enter your current password",
+    "newPassword": "New Password",
+    "enterNewPassword": "Enter your new password",
+    "confirmNewPassword": "Confirm New Password",
+    "passwordFieldsRequired": "All password fields are required",
+    "passwordMismatch": "New passwords do not match",
+    "passwordTooShort": "Password must be at least 6 characters long",
+    "passwordChangeSuccess": "Password changed successfully!",
+    "passwordChangeError": "Failed to change password. Please check your current password and try again.",
+    "updating": "Updating..."
+  },
+  "reviewsPage": {
+    "badge": "ALL REVIEWS",
+    "title": "What our clients say",
+    "subtitle": "Browse every customer review. Click any card to open the related car review when available.",
+    "loading": "Loading reviews...",
+    "empty": "No reviews available yet.",
+    "anonymous": "Anonymous Client",
+    "stats": {
+      "rating": "AVERAGE RATING",
+      "total": "TOTAL REVIEWS",
+      "fiveStar": "FIVE STAR RATE"
+    }
+  },
+  "reviewModal": {
+    "title": "Rate Your Experience",
+    "question": "How was your rental of the {{brand}} {{model}}?",
+    "yourRating": "Your Rating",
+    "shareThoughts": "Share your thoughts",
+    "placeholder": "The car was clean, great performance...",
+    "submitting": "Submitting...",
+    "submit": "Submit Review",
+    "submitFailed": "Failed to submit review"
+  },
+  "bookingCalendar": {
+    "selectDates": "Select Dates",
+    "loading": "Loading available dates...",
+    "loadFailed": "Failed to load vehicle availability.",
+    "blocked": "This vehicle is currently unavailable due to: {{reasons}}",
+    "overlapError": "This car is not available for this period. Please choose different dates."
+  },
+  "notifications": {
+    "title": "Notifications",
+    "markAllRead": "Mark all as read",
+    "empty": "No notifications yet",
+    "markRead": "Mark as read",
+    "defaultTitle": "Notification",
+    "bookingUpdate": "Booking Update",
+    "bookingCancelled": "Booking Cancelled",
+    "newBookingRequest": "New Booking Request",
+    "maintenanceAlert": "Maintenance Alert",
+    "statusUpdated": "Your booking status for your selected car has been updated to {{status}}."
+  },
+  "admin": {
+    "dashboard": {
+      "loading": "Loading dashboard...",
+      "bookingPipeline": {
+        "pending": "Pending",
+        "pendingNote": "Awaiting confirmation",
+        "active": "Active",
+        "activeNote": "Currently ongoing",
+        "completed": "Completed",
+        "completedNote": "Successfully finished"
+      },
+      "statCards": {
+        "fleet": "Fleet",
+        "availableNow": "available now",
+        "utilized": "utilized",
+        "reservations": "Reservations",
+        "confirmedBookings": "confirmed bookings",
+        "activeRightNow": "active right now",
+        "customers": "Customers",
+        "repeatRate": "repeat rate",
+        "activeLast30Days": "active last 30 days",
+        "revenue": "Revenue",
+        "last30Days": "last 30 days",
+        "completedBookings": "completed bookings"
+      },
+      "title": "Admin Dashboard",
+      "subtitle": "Overview of your business performance",
+      "last30Days": "Last 30 Days",
+      "buttons": {
+        "export": "Export"
+      },
+      "alerts": {
+        "vehicles": "vehicles",
+        "expiredDocs": "with expired documents",
+        "manageNow": "Manage Now",
+        "expiringWithin7": "expiring within 7 days",
+        "reviewFleet": "Review Fleet"
+      },
+      "revenueCard": {
+        "title": "Revenue",
+        "totalProfit": "Total Profit",
+        "completedRevenue": "Completed Revenue",
+        "last30Days": "Last 30 Days",
+        "revenue": "Revenue"
+      },
+      "bookingCard": {
+        "title": "Bookings",
+        "pipeline": "Booking Pipeline"
+      },
+      "productsCard": {
+        "title": "Top Vehicles",
+        "topSellingProducts": "Most Booked Cars",
+        "car": "Car",
+        "plate": "Plate",
+        "bookings": "Bookings",
+        "revenue": "Revenue",
+        "ratePerDay": "Rate / Day",
+        "noData": "No data available"
+      },
+      "activityCard": {
+        "title": "Activity",
+        "mostActiveDay": "Most Active Day",
+        "bookingsCreated": "bookings created",
+        "bookings": "Bookings"
+      },
+      "loyaltyCard": {
+        "title": "Loyalty",
+        "repeatRate": "Repeat Customer Rate",
+        "of": "of",
+        "customersBookedMore": "customers booked more than once"
+      },
+      "fleetCard": {
+        "inMaintenance": "In Maintenance",
+        "fleetUtilization": "Fleet Utilization",
+        "documentsExpiring": "Documents Expiring",
+        "cancelledBookings": "Cancelled Bookings"
+      }
+    },
+    "paymentStatus": {
+      "unpaid": "Unpaid",
+      "partial": "Partial",
+      "paid": "Paid"
+    },
+    "manageBookings": {
+      "filterAll": "All",
+      "alerts": {
+        "downloadInvoiceFailed": "Failed to download invoice"
+      },
+      "title": "Manage Bookings",
+      "subtitle": "Track and manage all reservations",
+      "searchPlaceholder": "Search bookings...",
+      "filterLabel": "Filter",
+      "buttons": {
+        "directEntry": "Direct Entry"
+      },
+      "tableHeaders": {
+        "customer": "Customer",
+        "vehicle": "Vehicle",
+        "dates": "Dates",
+        "total": "Total",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "guestClient": "Guest Client",
+      "noEmail": "No email",
+      "downloadInvoiceTitle": "Download Invoice",
+      "emptyState": "No bookings found",
+      "modal": {
+        "fields": {
+          "status": "Status",
+          "manualDiscount": "Manual Discount",
+          "paymentStatus": "Payment Status",
+          "notes": "Notes"
+        },
+        "hint": {
+          "manualDiscount": "Enter discount amount"
+        },
+        "buttons": {
+          "confirmChanges": "Confirm Changes"
+        }
+      }
+    },
+    "common": {
+      "cancel": "Cancel"
+    },
+    "manageCarDocuments": {
+      "alerts": {
+        "selectRequiredFields": "Please fill in all required fields",
+        "submitFailed": "Submission failed",
+        "updateStatusFailed": "Failed to update status"
+      },
+      "status": {
+        "expired": "Expired",
+        "expiringSoon": "Expiring Soon",
+        "valid": "Valid"
+      },
+      "title": "Car Documents",
+      "subtitle": "Manage vehicle documentation",
+      "buttons": {
+        "uploadDocument": "Upload Document"
+      },
+      "filters": {
+        "filterByCar": "Filter by Car",
+        "allVehicles": "All Vehicles"
+      },
+      "searchPlaceholder": "Search documents...",
+      "tableHeaders": {
+        "vehicle": "Vehicle",
+        "documentType": "Document Type",
+        "period": "Period",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "viewDocument": "View Document",
+      "actions": {
+        "delete": "Delete"
+      },
+      "modal": {
+        "title": "Add Document",
+        "description": "Upload a new document",
+        "selectVehicle": "Select Vehicle",
+        "selectVehiclePlaceholder": "Choose a vehicle...",
+        "documentType": "Document Type",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "uploadDocument": "Upload",
+        "notesOptional": "Notes (optional)",
+        "blockAvailabilityTitle": "Block Availability",
+        "blockAvailabilityDescription": "Prevent this vehicle from being booked",
+        "submitButton": "Submit"
+      },
+      "documentType": {
+        "insurance": "Insurance",
+        "technical_control": "Technical Control",
+        "vignette": "Vignette",
+        "carte_grise": "Registration Card"
+      }
+    },
+    "manageCars": {
+      "alerts": {
+        "failedLoadCars": "Failed to load cars",
+        "noImagesConfirm": "No images added. Continue?",
+        "operationFailed": "Operation failed",
+        "errorSavingCar": "Error saving car",
+        "deleteConfirm": "Are you sure you want to delete this car?",
+        "errorDeletingCar": "Error deleting car"
+      },
+      "loading": "Loading cars...",
+      "title": "Manage Fleet",
+      "subtitle": "Add, edit, and manage your vehicles",
+      "buttons": {
+        "addVehicle": "Add Vehicle"
+      },
+      "searchPlaceholder": "Search cars...",
+      "filters": {
+        "status": "Status",
+        "allFleet": "All Fleet"
+      },
+      "modal": {
+        "titleEdit": "Edit Vehicle",
+        "titleNew": "New Vehicle",
+        "subtitleEdit": "Update vehicle information",
+        "subtitleNew": "Add to your fleet",
+        "fields": {
+          "brand": "Brand",
+          "model": "Model",
+          "year": "Year",
+          "licensePlate": "License Plate",
+          "dailyPrice": "Daily Price",
+          "mileage": "Mileage",
+          "transmission": "Transmission",
+          "fuelType": "Fuel Type",
+          "availabilityStatus": "Availability Status"
+        },
+        "placeholders": {
+          "brand": "e.g. Toyota",
+          "model": "e.g. Corolla",
+          "licensePlate": "e.g. A-12345"
+        },
+        "options": {
+          "automatic": "Automatic",
+          "manual": "Manual",
+          "gasoline": "Gasoline",
+          "diesel": "Diesel",
+          "electric": "Electric",
+          "hybrid": "Hybrid"
+        },
+        "features": {
+          "promoteFeatured": {
+            "title": "Feature this car",
+            "description": "Display on the homepage"
+          },
+          "blockIfVignetteExpired": {
+            "title": "Block if vignette expired",
+            "description": "Prevent booking when vignette is expired"
+          }
+        },
+        "buttons": {
+          "updateVehicle": "Update Vehicle",
+          "saveVehicle": "Save Vehicle"
+        }
+      }
+    },
+    "bookingModal": {
+      "title": "Create Booking",
+      "subtitle": "Book a car for your customer",
+      "guestTab": "Guest",
+      "accountTab": "Account",
+      "guestSectionTitle": "Guest Information",
+      "accountSectionTitle": "Select Customer Account",
+      "labels": {
+        "fullName": "Full Name",
+        "cin": "CIN",
+        "phone": "Phone",
+        "emailOptional": "Email (optional)",
+        "search": "Search",
+        "selectCustomer": "Select Customer",
+        "vehicle": "Vehicle",
+        "selectDates": "Select dates",
+        "pickupLocation": "Pickup Location",
+        "discount": "Discount (%)",
+        "notes": "Notes"
+      },
+      "placeholders": {
+        "fullName": "Enter full name",
+        "cin": "Enter CIN",
+        "phone": "Enter phone number",
+        "email": "Enter email",
+        "search": "Search customers...",
+        "vehicle": "Select a vehicle",
+        "selectDates": "Choose rental dates",
+        "pickupLocation": "Enter pickup location",
+        "notes": "Additional notes..."
+      },
+      "noCustomersFound": "No customers found",
+      "errors": {
+        "guestFieldsRequired": "Please fill in all guest fields",
+        "selectCustomerAccount": "Please select a customer account",
+        "fillRequiredFields": "Please fill in all required fields",
+        "selectVehicleFirst": "Please select a vehicle first",
+        "creationFailed": "Failed to create booking"
+      },
+      "preview": {
+        "basePrice": "Base price",
+        "discount": "Discount applied: {{percent}}%",
+        "total": "Total"
+      },
+      "buttons": {
+        "processing": "Processing...",
+        "createBooking": "Create Booking"
+      }
+    },
+    
+    "status": {
+      "available": "Available",
+      "rented": "Rented",
+      "maintenance": "Maintenance",
+      "retired": "Retired"
+    },
+    "manageClients": {
+      "errors": {
+        "isRequired": "This field is required",
+        "invalidCin": "Invalid CIN number",
+        "lookupFailed": "Client lookup failed"
+      },
+      "title": "Manage Clients",
+      "subtitle": "Search and manage client profiles",
+      "labels": {
+        "cin": "National ID (CIN)",
+        "phone": "Phone Number"
+      },
+      "placeholders": {
+        "cin": "Enter CIN...",
+        "phone": "Enter phone..."
+      },
+      "buttons": {
+        "searchLoading": "Searching...",
+        "search": "Search"
+      },
+      "search": {
+        "loading": "Loading...",
+        "noResults": "No client found",
+        "resultLabel": "Client found",
+        "resultNote": "Client details"
+      },
+      "list": {
+        "title": "Client List",
+        "subtitle": "All registered clients",
+        "count": "Total"
+      },
+      "table": {
+        "client": "Client",
+        "cin": "CIN",
+        "phone": "Phone",
+        "linked": "Linked",
+        "email": "Email",
+        "bookings": "Bookings",
+        "latest": "Latest"
+      },
+      "status": {
+        "loadingClients": "Loading clients...",
+        "noClientRows": "No clients found"
+      },
+      "profile": {
+        "cin": "CIN",
+        "linkedAccount": "Linked Account",
+        "email": "Email",
+        "phonesUsed": "Phones Used"
+      },
+      "history": {
+        "title": "Booking History",
+        "subtitle": "Previous reservations"
+      },
+      "filters": {
+        "status": "Status",
+        "car": "Car",
+        "from": "From",
+        "to": "To"
+      },
+      "bookingsTable": {
+        "car": "Car",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "status": "Status",
+        "payment": "Payment",
+        "total": "Total",
+        "phoneUsed": "Phone Used",
+        "actions": "Actions"
+      }
+    },
+    "manageMaintenance": {
+      "alerts": {
+        "createFailed": "Failed to create maintenance record",
+        "statusUpdateFailed": "Failed to update status"
+      },
+      "title": "Maintenance",
+      "buttons": {
+        "scheduleService": "Schedule Service",
+        "schedule": "Schedule"
+      },
+      "tableHeaders": {
+        "car": "Car",
+        "serviceType": "Service Type",
+        "status": "Status",
+        "period": "Period",
+        "actions": "Actions"
+      },
+      "status": {
+        "scheduled": "Scheduled",
+        "inProgress": "In Progress",
+        "done": "Done",
+        "cancelled": "Cancelled"
+      },
+      "modal": {
+        "title": "Schedule Maintenance",
+        "subtitle": "Add a new maintenance record",
+        "fields": {
+          "car": "Car",
+          "type": "Type",
+          "startDate": "Start Date",
+          "endDate": "End Date",
+          "description": "Description"
+        },
+        "placeholders": {
+          "selectCar": "Select a car..."
+        },
+        "options": {
+          "oilChange": "Oil Change",
+          "tireChange": "Tire Change",
+          "inspection": "Inspection",
+          "repair": "Repair",
+          "other": "Other"
+        }
+      }
+    },
+    "manageMessages": {
+      "confirmDelete": "Are you sure you want to delete this message?",
+      "title": "Messages",
+      "subtitle": "Customer inquiries and messages",
+      "emptyState": "No messages yet",
+      "noPhone": "No phone",
+      "buttons": {
+        "delete": "Delete",
+        "reply": "Reply",
+        "whatsapp": "WhatsApp"
+      },
+      "sentOn": "Sent on",
+      "placeholder": "Write a message..."
+    },
+    "manageUsers": {
+      "notSpecified": "Not specified",
+      "title": "Manage Users",
+      "subtitle": "Manage all user accounts",
+      "tabs": {
+        "all": "All",
+        "customers": "Customers",
+        "employees": "Employees",
+        "admins": "Admins"
+      },
+      "tableHeaders": {
+        "user": "User",
+        "email": "Email",
+        "phone": "Phone",
+        "role": "Role",
+        "status": "Status",
+        "discount": "Discount",
+        "actions": "Actions"
+      },
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive"
+      },
+      "buttons": {
+        "setDiscount": "Set Discount",
+        "viewDetails": "View Details"
+      },
+      "emptyState": "No users found",
+      "discountModal": {
+        "title": "Set Discount"
+      },
+      "detailsModal": {
+        "title": "User Details",
+        "email": "Email",
+        "phone": "Phone",
+        "cin": "CIN",
+        "license": "License",
+        "memberSince": "Member Since",
+        "loyaltyDiscount": "Loyalty Discount",
+        "roleLabel": "Role",
+        "statusLabel": "Status",
+        "statusActive": "Active",
+        "statusInactive": "Inactive",
+        "saving": "Saving...",
+        "save": "Save"
+      },
+      "roles": {
+        "customer": "Customer",
+        "employee": "Employee",
+        "admin": "Admin"
+      }
+    },
+    "verifyDocuments": {
+      "alerts": {
+        "updateFailed": "Failed to update document"
+      },
+      "title": "Document Verification",
+      "subtitle": "Review and approve user documents",
+      "tableHeaders": {
+        "user": "User",
+        "documentType": "Document Type",
+        "status": "Status",
+        "uploaded": "Uploaded",
+        "actions": "Actions"
+      },
+      "buttons": {
+        "review": "Review",
+        "approve": "Approve",
+        "reject": "Reject"
+      },
+      "documentPreviewAlt": "Document preview",
+      "userDetails": "User Details",
+      "labels": {
+        "name": "Name",
+        "phone": "Phone",
+        "verificationNotes": "Verification Notes"
+      },
+      "noPhone": "No phone",
+      "placeholders": {
+        "notes": "Add notes..."
+      },
+      "documentType": {
+        "driver_license": "Driver's License",
+        "id_card": "ID Card",
+        "passport": "Passport",
+        "vehicle_registration": "Vehicle Registration"
+      },
+      "status": {
+        "pending": "Pending",
+        "verified": "Verified",
+        "rejected": "Rejected"
+      },
+      "reviewTitle": "Review Document: {{name}}"
+    },
+    "sidebar": {
+      "dashboard": "Dashboard",
+      "fleet": "Fleet",
+      "bookings": "Bookings",
+      "clients": "Clients",
+      "users": "Users",
+      "maintenance": "Maintenance",
+      "fleetHealth": "Fleet Health",
+      "verification": "Verification",
+      "messages": "Messages",
+      "systemOnline": "System Online"
+    },
+    "bookingStatus": {
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "active": "Active",
+      "completed": "Completed",
+      "cancelled": "Cancelled",
+      "rejected": "Rejected"
+    }
+  }
+}
