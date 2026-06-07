@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { getCars, createCar, updateCar, deleteCar } from '../api/carApi';
@@ -54,9 +54,9 @@ const ManageCars = () => {
 
   useEffect(() => {
     fetchCars();
-  }, []);
+  }, [fetchCars]);
 
-  const fetchCars = async () => {
+  const fetchCars = useCallback(async () => {
     try {
       const res = await getCars({ limit: 100 });
       if (res.success) setCars(res.data || []);
@@ -65,7 +65,7 @@ const ManageCars = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [t]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;

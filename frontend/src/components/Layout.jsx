@@ -6,7 +6,6 @@ import Footer from './Footer';
 const Layout = ({ children }) => {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
-  const isAdminPage = location.pathname.startsWith('/admin');
   const shouldUseFlushTop = isHomePage || location.pathname === '/login' || location.pathname === '/register';
 
   return (
