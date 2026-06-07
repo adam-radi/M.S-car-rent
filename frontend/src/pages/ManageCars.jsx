@@ -52,10 +52,6 @@ const ManageCars = () => {
     vignetteBlocking: false
   });
 
-  useEffect(() => {
-    fetchCars();
-  }, [fetchCars]);
-
   const fetchCars = useCallback(async () => {
     try {
       const res = await getCars({ limit: 100 });
@@ -67,6 +63,14 @@ const ManageCars = () => {
     }
   }, [t]);
 
+
+  
+  useEffect(() => {
+    fetchCars();
+  }, [fetchCars]);
+
+
+  
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => {
