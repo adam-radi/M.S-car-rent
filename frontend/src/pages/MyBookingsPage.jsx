@@ -9,12 +9,12 @@ import '../styles/MyBookingsPage.css';
 import '../styles/MyBookings_Loyalty.css';
 
 const STATUS_COLORS = {
-  pending:   { bg: 'rgba(251, 191, 36, 0.12)', color: '#fbbf24', border: '#fbbf24' },
+  pending: { bg: 'rgba(251, 191, 36, 0.12)', color: '#fbbf24', border: '#fbbf24' },
   confirmed: { bg: 'rgba(52, 211, 153, 0.12)', color: '#34d399', border: '#34d399' },
-  active:    { bg: 'rgba(96, 165, 250, 0.12)', color: '#60a5fa', border: '#60a5fa' },
+  active: { bg: 'rgba(96, 165, 250, 0.12)', color: '#60a5fa', border: '#60a5fa' },
   completed: { bg: 'rgba(148, 163, 184, 0.12)', color: '#94a3b8', border: '#94a3b8' },
   cancelled: { bg: 'rgba(248, 113, 113, 0.12)', color: '#f87171', border: '#f87171' },
-  rejected:  { bg: 'rgba(248, 113, 113, 0.12)', color: '#f87171', border: '#f87171' },
+  rejected: { bg: 'rgba(248, 113, 113, 0.12)', color: '#f87171', border: '#f87171' },
 };
 
 const MyBookingsPage = () => {
@@ -99,10 +99,21 @@ const MyBookingsPage = () => {
             const statusKey = booking.status || 'pending';
             const statusColors = STATUS_COLORS[statusKey] || STATUS_COLORS.pending;
             const carInfo = booking.car || {};
-            const carImage =
-              carInfo.images && carInfo.images.length > 0
-                ? carInfo.images[0]
-                : 'https://via.placeholder.com/140x90?text=Car';
+            const carImage = (() => {
+              // eslint-disable-next-line no-unused-vars
+              const API_URL = (process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000').replace(/\/+$/, '');
+              const img = carInfo.images && carInfo.images.length > 0 ? carInfo.images[0] : null;
+
+              if (!img) return 'https://via.placeholder.com/140x90?text=Car';
+              if (typeof img !== 'string') return img;
+
+              const str = img.trim();
+              if (!str) return 'https://via.placeholder.com/140x90?text=Car';
+              if (str.startsWith('http://') || str.startsWith('https://')) return str;
+
+              if (str.startsWith('/')) return `${API_URL}${str}`;
+              return `${API_URL}/${str}`;
+            })();
 
             return (
               <div key={booking._id} className={`booking-card booking-card--${statusKey}`} style={{ borderLeft: `3px solid ${statusColors.border}` }}>

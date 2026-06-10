@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import '../styles/AdminSelect.css';
 
 /**
@@ -15,17 +16,48 @@ import '../styles/AdminSelect.css';
 const AdminSelect = ({ name, value, onChange, options = [], disabled = false, placeholder = 'Select...', className = '' }) => {
   const [open, setOpen] = useState(false);
   const wrapperRef = useRef(null);
+  const dropdownRef = useRef(null);
+  const [coords, setCoords] = useState(null);
 
   // Close on outside click
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (wrapperRef.current && !wrapperRef.current.contains(e.target)) {
+      if (
+        wrapperRef.current && !wrapperRef.current.contains(e.target) &&
+        (!dropdownRef.current || !dropdownRef.current.contains(e.target))
+      ) {
         setOpen(false);
       }
     };
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
+
+  const updatePosition = () => {
+    if (wrapperRef.current) {
+      const rect = wrapperRef.current.getBoundingClientRect();
+      setCoords({
+        left: rect.left,
+        top: rect.bottom,
+        width: rect.width
+      });
+    }
+  };
+
+  useEffect(() => {
+    if (open) {
+      updatePosition();
+      window.addEventListener('resize', updatePosition);
+      window.addEventListener('scroll', updatePosition, true);
+    } else {
+      window.removeEventListener('resize', updatePosition);
+      window.removeEventListener('scroll', updatePosition, true);
+    }
+    return () => {
+      window.removeEventListener('resize', updatePosition);
+      window.removeEventListener('scroll', updatePosition, true);
+    };
+  }, [open]);
 
   const isValueEqual = (a, b) => {
     if (typeof a === 'string' && typeof b === 'string') {
@@ -37,11 +69,40 @@ const AdminSelect = ({ name, value, onChange, options = [], disabled = false, pl
   const selectedOption = options.find((o) => isValueEqual(o.value, value));
   const selectedLabel = selectedOption?.label || placeholder;
 
-
   const handleSelect = (optionValue) => {
     onChange(name, optionValue);
     setOpen(false);
   };
+
+  const dropdownMenu = open && coords ? createPortal(
+    <div 
+      className="admin-dropdown-box" 
+      ref={dropdownRef}
+      style={{
+        position: 'fixed',
+        top: `${coords.top + 6}px`,
+        left: `${coords.left}px`,
+        width: `${coords.width}px`,
+        zIndex: 999999,
+        margin: 0
+      }}
+    >
+      {options.length > 0 ? (
+        options.map(opt => (
+          <div
+            key={opt.value}
+            className={`admin-dropdown-item ${isValueEqual(opt.value, value) ? 'active' : ''}`}
+            onClick={(e) => { e.stopPropagation(); handleSelect(opt.value); }}
+          >
+            {opt.label}
+          </div>
+        ))
+      ) : (
+        <div className="admin-select-empty">No results found</div>
+      )}
+    </div>,
+    document.body
+  ) : null;
 
   return (
     <div
@@ -61,24 +122,7 @@ const AdminSelect = ({ name, value, onChange, options = [], disabled = false, pl
         </span>
       </div>
 
-      {/* Dropdown List – same style as custom-dropdown-box */}
-      {open && (
-        <div className="admin-dropdown-box">
-          {options.length > 0 ? (
-            options.map(opt => (
-              <div
-                key={opt.value}
-                className={`admin-dropdown-item ${isValueEqual(opt.value, value) ? 'active' : ''}`}
-                onClick={(e) => { e.stopPropagation(); handleSelect(opt.value); }}
-              >
-                {opt.label}
-              </div>
-            ))
-          ) : (
-            <div className="admin-select-empty">No results found</div>
-          )}
-        </div>
-      )}
+      {dropdownMenu}
     </div>
   );
 };
