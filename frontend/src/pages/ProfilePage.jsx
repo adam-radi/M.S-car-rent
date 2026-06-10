@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../hooks/useAuth';
-import { getMyDocuments, uploadDocument } from '../api/documentApi';
+import { getMyDocuments, uploadDocument, deleteDocument } from '../api/documentApi';
 import { updatePassword } from '../api/authApi';
-import { FaTimes, FaLock, FaKey } from 'react-icons/fa';
+import { FaTimes, FaLock, FaKey, FaTrash } from 'react-icons/fa';
 import '../styles/ProfilePage.css';
 
 const ProfilePage = () => {
@@ -62,6 +62,18 @@ const ProfilePage = () => {
       setError(err.response?.data?.message || t('profile.uploadError'));
     } finally {
       setUploading(false);
+    }
+  };
+
+  const handleDelete = async (id) => {
+    if (window.confirm(t('profile.confirmDelete') || 'Are you sure you want to delete this document?')) {
+      try {
+        await deleteDocument(id);
+        setSuccess(t('profile.deleteSuccess') || 'Document deleted successfully.');
+        fetchDocs();
+      } catch (err) {
+        setError(err.response?.data?.message || t('profile.deleteError') || 'Failed to delete document.');
+      }
     }
   };
 
@@ -171,6 +183,14 @@ const ProfilePage = () => {
                 <span className={`doc-status ${doc.status}`}>
                   {t(`profile.docStatus.${doc.status}`, { defaultValue: doc.status })}
                 </span>
+                <button 
+                  type="button" 
+                  className="btn-delete-doc" 
+                  onClick={() => handleDelete(doc._id)}
+                  title={t('profile.delete') || 'Delete'}
+                >
+                  <FaTrash />
+                </button>
               </div>
             ))}
           </div>

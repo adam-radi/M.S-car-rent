@@ -20,3 +20,8 @@ export const updateDocumentStatus = async (id, data) => {
   return response.data;
 };
 
+export const deleteDocument = async (id) => {
+  const response = await axiosInstance.delete(`/api/documents/${id}`);
+  return response.data;
+};
+
