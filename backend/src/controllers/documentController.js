@@ -101,3 +101,28 @@ exports.getAllDocuments = async (req, res, next) => {
   }
 };
 
+/**
+ * @desc    Delete a document
+ * @route   DELETE /api/documents/:id
+ * @access  Private
+ */
+exports.deleteDocument = async (req, res, next) => {
+  try {
+    const document = await Document.findById(req.params.id);
+
+    if (!document) {
+      return res.status(404).json({ success: false, message: 'Document not found' });
+    }
+
+    if (document.user.toString() !== req.user.id && req.user.role !== 'admin') {
+      return res.status(403).json({ success: false, message: 'Not authorized to delete this document' });
+    }
+
+    await document.deleteOne();
+
+    res.status(200).json({ success: true, data: {} });
+  } catch (error) {
+    next(error);
+  }
+};
+

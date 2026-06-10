@@ -3,7 +3,8 @@ const {
   uploadDocument,
   getMyDocuments,
   updateDocumentStatus,
-  getAllDocuments
+  getAllDocuments,
+  deleteDocument
 } = require('../controllers/documentController');
 const { protect, authorize } = require('../middleware/authMiddleware');
 const upload = require('../utils/fileUpload');
@@ -19,5 +20,7 @@ router.get('/all', authorize(USER_ROLES.ADMIN, USER_ROLES.EMPLOYEE), getAllDocum
 
 // Admin-only route to verify documents
 router.patch('/:id/status', authorize(USER_ROLES.ADMIN, USER_ROLES.EMPLOYEE), updateDocumentStatus);
+
+router.delete('/:id', deleteDocument);
 
 module.exports = router;
